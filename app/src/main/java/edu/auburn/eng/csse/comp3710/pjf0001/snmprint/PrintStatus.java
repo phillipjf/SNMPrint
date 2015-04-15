@@ -20,7 +20,7 @@ public class PrintStatus extends Activity{
 	 * This method process the request and Get the Value on the device
 	 * @returns String. community=READ_COMMUNITY
 	 */
-	public void snmpGet(String strIPAddress, String community, int iSNMPVersion, String strOID){
+	public Integer snmpGet(String strIPAddress, String community, int iSNMPVersion, String strOID){
 		String str="";
 		try{
 			InetAddress hostAddress = InetAddress.getByName(strIPAddress);
@@ -41,31 +41,33 @@ public class PrintStatus extends Activity{
 
 			//printGUI.model.addElement(printGUI.printerName.getText());
             TextView view = (TextView) findViewById(R.id.outputText);
+			view.setText("something");
 			str = snmpValue.toString();
 			if(strOID == OID_BASE_LEVEL+OID_BLACK){
 				//view.addElement("BLACK: " + str + "%");
                 view.append("BLACK" + str + "%");
-				System.out.println("BLACK: "+ str +"%");
+				//System.out.println("BLACK: "+ str +"%");
 			}
 			else if(strOID == OID_BASE_LEVEL+OID_YELLOW){
 				//printGUI.model.addElement("YELLOW: "+ str +"%");
                 view.append("Yellow" + str + "%");
-				System.out.println("YELLOW: "+ str +"%");
+				//System.out.println("YELLOW: "+ str +"%");
 			}
 			if(strOID == OID_BASE_LEVEL+OID_CYAN){
 				//printGUI.model.addElement("CYAN: "+ str +"%");
                 view.append("CYAN" + str + "%");
-				System.out.println("CYAN: "+ str +"%");
+				//System.out.println("CYAN: "+ str +"%");
 			}
-			if(strOID == OID_BASE_LEVEL+OID_MAGENTA){
+			if(strOID == OID_BASE_LEVEL+OID_MAGENTA) {
 				//printGUI.model.addElement("MAGENTA: "+ str +"%");
-                view.append("MAGENTA" + str + "%");
-                System.out.println("MAGENTA: "+ str +"%");
+				view.append("MAGENTA" + str + "%");
+				//System.out.println("MAGENTA: "+ str +"%");
 			}
 		}
 		catch(Exception e){
 			System.out.println("Exception during SNMP operation: " + e + "\n");
 		}
+		return 0;
 	}
 } 
 

@@ -44,7 +44,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/outputText"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.58" />
+            android:layout_weight="0.58"
+            android:text="something" />
 
         <Button
             android:layout_width="wrap_content"

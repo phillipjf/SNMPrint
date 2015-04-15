@@ -1,38 +1,42 @@
 package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
+public class MainActivity extends Activity
+{
+    public static final String READ_COMMUNITY = "public";
+    public static final int    mSNMPVersion = 0; // 0 represents SNMP version=1
+    public static final String BASE_IP = "131.204.116.176";
+    public static final String OID_BASE_LEVEL = "1.3.6.1.2.1.43.11.1.1.9.";
+    public static final String OID_BLACK = "1.1";
+    public static final String OID_YELLOW = "1.2";
+    public static final String OID_CYAN = "1.3";
+    public static final String OID_MAGENTA = "1.4";
 
-public class MainActivity extends ActionBarActivity {
+    Button submit;
+    TextView outputText;
+    PrintStatus prntStat = new PrintStatus();
+    AsyncTask theTask = new printTask();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final String READ_COMMUNITY = "public";
-        final int    mSNMPVersion = 0; // 0 represents SNMP version=1
-        final String BASE_IP = "131.204.116.";
-        final String OID_BASE_LEVEL = "1.3.6.1.2.1.43.11.1.1.9.";
-        final String OID_BLACK = "1.1";
-        final String OID_YELLOW = "1.2";
-        final String OID_CYAN = "1.3";
-        final String OID_MAGENTA = "1.4";
+        Log.i("DEBUG", "made it to onCreate");
 
-
-        final PrintStatus stat = new PrintStatus();
-        Button submit = (Button) findViewById(R.id.submitButton);
-        submit.setOnClickListener(new View.OnClickListener() {
+        submit = (Button) findViewById(R.id.submitButton);
+        submit.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                stat.snmpGet(BASE_IP+findViewById(R.id.ipEnd).toString(), READ_COMMUNITY, mSNMPVersion,OID_BASE_LEVEL+OID_BLACK);
-                stat.snmpGet(BASE_IP+findViewById(R.id.ipEnd).toString(), READ_COMMUNITY, mSNMPVersion,OID_BASE_LEVEL+OID_YELLOW);
-                stat.snmpGet(BASE_IP+findViewById(R.id.ipEnd).toString(), READ_COMMUNITY, mSNMPVersion,OID_BASE_LEVEL+OID_CYAN);
-                stat.snmpGet(BASE_IP+findViewById(R.id.ipEnd).toString(), READ_COMMUNITY, mSNMPVersion,OID_BASE_LEVEL+OID_MAGENTA);
+                new printTask().execute();
+                //Log.i("DEBUG", "made it to onCreate submit");
             }
         });
     }
@@ -44,18 +48,12 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    private class printTask extends AsyncTask<String, Void, Integer>{
+        @Override
+        protected Integer doInBackground(String... params) {
+            Log.i("DEBUG", "made it to output");
+            return prntStat.snmpGet(BASE_IP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL+OID_BLACK);
         }
-
-        return super.onOptionsItemSelected(item);
     }
+
 }
