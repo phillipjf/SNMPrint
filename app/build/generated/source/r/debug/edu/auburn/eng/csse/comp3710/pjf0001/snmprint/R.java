@@ -1322,11 +1322,12 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0b002d;
         public static final int action_mode_close_button=0x7f0b0020;
         public static final int activity_chooser_view_content=0x7f0b0021;
+        public static final int add_printer=0x7f0b0048;
         public static final int always=0x7f0b0016;
         public static final int beginning=0x7f0b0013;
         public static final int checkbox=0x7f0b0029;
         public static final int collapseActionView=0x7f0b0017;
-        public static final int container=0x7f0b0046;
+        public static final int container=0x7f0b003f;
         public static final int decor_content_parent=0x7f0b002f;
         public static final int default_activity_button=0x7f0b0024;
         public static final int dialog=0x7f0b001b;
@@ -1342,17 +1343,17 @@ containing a value of this type.
         public static final int ifRoom=0x7f0b0018;
         public static final int image=0x7f0b0023;
         public static final int imgLogo=0x7f0b0047;
-        public static final int ipEnd=0x7f0b0040;
-        public static final int ipTitle=0x7f0b003f;
+        public static final int ipEnd=0x7f0b0041;
+        public static final int ipTitle=0x7f0b0040;
         public static final int listMode=0x7f0b0009;
         public static final int list_item=0x7f0b0025;
-        public static final int menu_settings=0x7f0b0048;
+        public static final int menu_settings=0x7f0b0049;
         public static final int middle=0x7f0b0015;
         public static final int never=0x7f0b0019;
         public static final int none=0x7f0b000e;
         public static final int normal=0x7f0b000a;
-        public static final int printDetails=0x7f0b0043;
-        public static final int printName=0x7f0b0042;
+        public static final int printDetails=0x7f0b0044;
+        public static final int printName=0x7f0b0043;
         public static final int progress_circular=0x7f0b0005;
         public static final int progress_horizontal=0x7f0b0006;
         public static final int radio=0x7f0b002b;
@@ -1371,11 +1372,11 @@ containing a value of this type.
         public static final int showHome=0x7f0b0010;
         public static final int showTitle=0x7f0b0011;
         public static final int split_action_bar=0x7f0b0007;
-        public static final int submitButton=0x7f0b0044;
+        public static final int submitButton=0x7f0b0045;
         public static final int submit_area=0x7f0b003c;
         public static final int tabMode=0x7f0b000b;
-        public static final int textUserSettings=0x7f0b0045;
-        public static final int textView2=0x7f0b0041;
+        public static final int textUserSettings=0x7f0b0046;
+        public static final int textView2=0x7f0b0042;
         public static final int title=0x7f0b0027;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
@@ -1409,13 +1410,16 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f040014;
         public static final int abc_search_view=0x7f040015;
         public static final int abc_simple_dropdown_hint=0x7f040016;
-        public static final int activity_main=0x7f040017;
-        public static final int activity_settings=0x7f040018;
-        public static final int activity_splash=0x7f040019;
-        public static final int support_simple_spinner_dropdown_item=0x7f04001a;
+        public static final int activity_addprinter=0x7f040017;
+        public static final int activity_main=0x7f040018;
+        public static final int activity_oldsplash=0x7f040019;
+        public static final int activity_settings=0x7f04001a;
+        public static final int activity_splash=0x7f04001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f04001c;
     }
     public static final class menu {
-        public static final int settings=0x7f0f0000;
+        public static final int addprinter=0x7f0f0000;
+        public static final int settings=0x7f0f0001;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1437,20 +1441,26 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f0d000d;
         public static final int abc_shareactionprovider_share_with_application=0x7f0d000e;
         public static final int abc_toolbar_collapse_description=0x7f0d000f;
-        public static final int app_name=0x7f0d0010;
-        public static final int hello_world=0x7f0d0011;
-        public static final int menu_settings=0x7f0d0012;
-        public static final int pref_id=0x7f0d0013;
-        public static final int pref_mod=0x7f0d0014;
-        public static final int pref_send_report=0x7f0d0015;
-        public static final int pref_send_report_summary=0x7f0d0016;
-        public static final int pref_sync_frequency=0x7f0d0017;
-        public static final int pref_sync_frequency_summary=0x7f0d0018;
-        public static final int pref_update_setting=0x7f0d0019;
-        public static final int pref_user_name=0x7f0d001a;
-        public static final int pref_user_name_summary=0x7f0d001b;
-        public static final int pref_user_profile=0x7f0d001c;
-        public static final int title_activity_main=0x7f0d001d;
+        public static final int add_printer=0x7f0d0010;
+        public static final int app_name=0x7f0d0011;
+        public static final int hello_world=0x7f0d0012;
+        public static final int ip_end_summary=0x7f0d0013;
+        public static final int ip_title=0x7f0d0014;
+        public static final int menu_settings=0x7f0d0015;
+        public static final int pref_id=0x7f0d0016;
+        public static final int pref_mod=0x7f0d0017;
+        public static final int pref_send_report=0x7f0d0018;
+        public static final int pref_send_report_summary=0x7f0d0019;
+        public static final int pref_sync_frequency=0x7f0d001a;
+        public static final int pref_sync_frequency_summary=0x7f0d001b;
+        public static final int pref_update_setting=0x7f0d001c;
+        public static final int pref_user_name=0x7f0d001d;
+        public static final int pref_user_name_summary=0x7f0d001e;
+        public static final int pref_user_profile=0x7f0d001f;
+        public static final int print_name=0x7f0d0020;
+        public static final int print_name_summary=0x7f0d0021;
+        public static final int print_title=0x7f0d0022;
+        public static final int title_activity_main=0x7f0d0023;
     }
     public static final class style {
         /**  Customize your theme here. 
@@ -1693,7 +1703,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0e00df;
     }
     public static final class xml {
-        public static final int settings=0x7f060000;
+        public static final int printers=0x7f060000;
+        public static final int settings=0x7f060001;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -1702,33 +1713,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background edu.auburn.eng.csse.comp3710.pjf0001.snmprint:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit edu.auburn.eng.csse.comp3710.pjf0001.snmprint:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked edu.auburn.eng.csse.comp3710.pjf0001.snmprint:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout edu.auburn.eng.csse.comp3710.pjf0001.snmprint:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions edu.auburn.eng.csse.comp3710.pjf0001.snmprint:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider edu.auburn.eng.csse.comp3710.pjf0001.snmprint:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation edu.auburn.eng.csse.comp3710.pjf0001.snmprint:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height edu.auburn.eng.csse.comp3710.pjf0001.snmprint:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll edu.auburn.eng.csse.comp3710.pjf0001.snmprint:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator edu.auburn.eng.csse.comp3710.pjf0001.snmprint:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout edu.auburn.eng.csse.comp3710.pjf0001.snmprint:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon edu.auburn.eng.csse.comp3710.pjf0001.snmprint:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding edu.auburn.eng.csse.comp3710.pjf0001.snmprint:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo edu.auburn.eng.csse.comp3710.pjf0001.snmprint:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode edu.auburn.eng.csse.comp3710.pjf0001.snmprint:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding edu.auburn.eng.csse.comp3710.pjf0001.snmprint:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title edu.auburn.eng.csse.comp3710.pjf0001.snmprint:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -1768,17 +1779,17 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f010071
         };
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#background}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:background
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1786,11 +1797,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:backgroundSplit
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1798,11 +1809,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:backgroundStacked
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1814,11 +1825,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetEnd
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1830,11 +1841,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetLeft
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1846,11 +1857,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetRight
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1862,21 +1873,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetStart
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:customNavigationLayout
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1894,21 +1905,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:displayOptions
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#divider}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:divider
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#elevation}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1920,11 +1931,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:elevation
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#height}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1936,11 +1947,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:height
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1950,51 +1961,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:hideOnContentScroll
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:homeAsUpIndicator
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:homeLayout
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#icon}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:icon
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:indeterminateProgressStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2006,21 +2017,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:itemPadding
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#logo}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:logo
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2034,21 +2045,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:navigationMode
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupTheme
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2060,21 +2071,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:progressBarPadding
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:progressBarStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2084,21 +2095,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitleTextStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#title}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2108,17 +2119,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:title
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleTextStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -2170,12 +2181,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background edu.auburn.eng.csse.comp3710.pjf0001.snmprint:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit edu.auburn.eng.csse.comp3710.pjf0001.snmprint:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout edu.auburn.eng.csse.comp3710.pjf0001.snmprint:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height edu.auburn.eng.csse.comp3710.pjf0001.snmprint:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2189,17 +2200,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#background}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:background
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2207,21 +2218,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:backgroundSplit
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:closeItemLayout
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#height}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2233,27 +2244,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:height
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitleTextStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleTextStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -2262,8 +2273,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount edu.auburn.eng.csse.comp3710.pjf0001.snmprint:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2272,17 +2283,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:expandActivityOverflowButtonDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -2292,7 +2303,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:initialActivityCount
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CompatTextView.
@@ -2301,7 +2312,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -2309,14 +2320,14 @@ containing a value of this type.
             0x7f01001f
         };
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#textAllCaps}
           attribute's value can be found in the {@link #CompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAllCaps
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -2325,14 +2336,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barSize edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:barSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:middleBarArrowSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:thickness}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:topBottomBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize edu.auburn.eng.csse.comp3710.pjf0001.snmprint:barSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color edu.auburn.eng.csse.comp3710.pjf0001.snmprint:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize edu.auburn.eng.csse.comp3710.pjf0001.snmprint:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars edu.auburn.eng.csse.comp3710.pjf0001.snmprint:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize edu.auburn.eng.csse.comp3710.pjf0001.snmprint:middleBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars edu.auburn.eng.csse.comp3710.pjf0001.snmprint:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness edu.auburn.eng.csse.comp3710.pjf0001.snmprint:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize edu.auburn.eng.csse.comp3710.pjf0001.snmprint:topBottomBarArrowSize}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_barSize
            @see #DrawerArrowToggle_color
@@ -2348,7 +2359,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#barSize}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#barSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2360,11 +2371,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:barSize
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:barSize
         */
         public static final int DrawerArrowToggle_barSize = 6;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#color}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2375,11 +2386,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:color
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2391,11 +2402,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:drawableSize
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2407,11 +2418,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:gapBetweenBars
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#middleBarArrowSize}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#middleBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2423,11 +2434,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:middleBarArrowSize
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:middleBarArrowSize
         */
         public static final int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2437,11 +2448,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:spinBars
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#thickness}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2453,11 +2464,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:thickness
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#topBottomBarArrowSize}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#topBottomBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2469,7 +2480,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:topBottomBarArrowSize
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -2483,10 +2494,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider edu.auburn.eng.csse.comp3710.pjf0001.snmprint:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild edu.auburn.eng.csse.comp3710.pjf0001.snmprint:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers edu.auburn.eng.csse.comp3710.pjf0001.snmprint:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -2534,17 +2545,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#divider}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:divider
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2556,11 +2567,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dividerPadding
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2570,11 +2581,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:measureWithLargestChild
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2589,7 +2600,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:showDividers
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -2728,9 +2739,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -2744,7 +2755,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction edu.auburn.eng.csse.comp3710.pjf0001.snmprint:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -2772,17 +2783,17 @@ containing a value of this type.
             0x7f01002e
         };
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionLayout
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2792,11 +2803,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionProviderClass
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2806,7 +2817,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionViewClass
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -2888,7 +2899,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2904,7 +2915,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:showAsAction
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -2920,7 +2931,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing edu.auburn.eng.csse.comp3710.pjf0001.snmprint:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -2978,7 +2989,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -2988,7 +2999,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:preserveIconSpacing
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
@@ -2998,7 +3009,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor edu.auburn.eng.csse.comp3710.pjf0001.snmprint:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -3013,7 +3024,7 @@ containing a value of this type.
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -3023,7 +3034,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:overlapAnchor
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -3032,7 +3043,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor edu.auburn.eng.csse.comp3710.pjf0001.snmprint:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -3040,7 +3051,7 @@ containing a value of this type.
             0x7f010031
         };
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -3050,7 +3061,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:state_above_anchor
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a SearchView.
@@ -3063,17 +3074,17 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon edu.auburn.eng.csse.comp3710.pjf0001.snmprint:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon edu.auburn.eng.csse.comp3710.pjf0001.snmprint:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon edu.auburn.eng.csse.comp3710.pjf0001.snmprint:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault edu.auburn.eng.csse.comp3710.pjf0001.snmprint:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout edu.auburn.eng.csse.comp3710.pjf0001.snmprint:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground edu.auburn.eng.csse.comp3710.pjf0001.snmprint:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint edu.auburn.eng.csse.comp3710.pjf0001.snmprint:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon edu.auburn.eng.csse.comp3710.pjf0001.snmprint:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground edu.auburn.eng.csse.comp3710.pjf0001.snmprint:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout edu.auburn.eng.csse.comp3710.pjf0001.snmprint:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon edu.auburn.eng.csse.comp3710.pjf0001.snmprint:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -3122,37 +3133,37 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:closeIcon
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:closeIcon
         */
         public static final int SearchView_closeIcon = 7;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:commitIcon
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:commitIcon
         */
         public static final int SearchView_commitIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:goIcon
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:goIcon
         */
         public static final int SearchView_goIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -3162,31 +3173,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:iconifiedByDefault
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#layout}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:layout
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:queryBackground
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:queryBackground
         */
         public static final int SearchView_queryBackground = 13;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -3196,47 +3207,47 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:queryHint
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:searchIcon
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:searchIcon
         */
         public static final int SearchView_searchIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:submitBackground
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:submitBackground
         */
         public static final int SearchView_submitBackground = 14;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:suggestionRowLayout
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 12;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:voiceIcon
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:voiceIcon
         */
         public static final int SearchView_voiceIcon = 10;
         /** Attributes that can be used with a Spinner.
@@ -3252,10 +3263,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:disableChildrenWhenDisabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupPromptView}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_prompt edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:spinnerMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled edu.auburn.eng.csse.comp3710.pjf0001.snmprint:disableChildrenWhenDisabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupPromptView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_prompt edu.auburn.eng.csse.comp3710.pjf0001.snmprint:prompt}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode edu.auburn.eng.csse.comp3710.pjf0001.snmprint:spinnerMode}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_background
            @see #Spinner_android_dropDownHorizontalOffset
@@ -3317,7 +3328,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Spinner_android_popupBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#disableChildrenWhenDisabled}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#disableChildrenWhenDisabled}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -3327,31 +3338,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:disableChildrenWhenDisabled
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 10;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#popupPromptView}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#popupPromptView}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupPromptView
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupPromptView
         */
         public static final int Spinner_popupPromptView = 9;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#prompt}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#prompt}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:prompt
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:prompt
         */
         public static final int Spinner_prompt = 7;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#spinnerMode}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#spinnerMode}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -3364,7 +3375,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>dialog</code></td><td>0</td><td></td></tr>
 <tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:spinnerMode
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:spinnerMode
         */
         public static final int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwitchCompat.
@@ -3376,13 +3387,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText edu.auburn.eng.csse.comp3710.pjf0001.snmprint:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack edu.auburn.eng.csse.comp3710.pjf0001.snmprint:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth edu.auburn.eng.csse.comp3710.pjf0001.snmprint:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding edu.auburn.eng.csse.comp3710.pjf0001.snmprint:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance edu.auburn.eng.csse.comp3710.pjf0001.snmprint:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding edu.auburn.eng.csse.comp3710.pjf0001.snmprint:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track edu.auburn.eng.csse.comp3710.pjf0001.snmprint:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -3419,7 +3430,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#showText}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3429,11 +3440,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:showText
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3443,11 +3454,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:splitTrack
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3459,11 +3470,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:switchMinWidth
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3475,21 +3486,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:switchPadding
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:switchTextAppearance
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3501,17 +3512,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:thumbTextPadding
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#track}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:track
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a Theme.
@@ -3520,89 +3531,89 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:activityChooserViewStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground edu.auburn.eng.csse.comp3710.pjf0001.snmprint:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor edu.auburn.eng.csse.comp3710.pjf0001.snmprint:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator edu.auburn.eng.csse.comp3710.pjf0001.snmprint:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground edu.auburn.eng.csse.comp3710.pjf0001.snmprint:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme edu.auburn.eng.csse.comp3710.pjf0001.snmprint:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth edu.auburn.eng.csse.comp3710.pjf0001.snmprint:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground edu.auburn.eng.csse.comp3710.pjf0001.snmprint:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless edu.auburn.eng.csse.comp3710.pjf0001.snmprint:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowFixedWidthMinor}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -3712,37 +3723,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010097, 0x7f010098, 0x7f010099
         };
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarDivider
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 19;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarItemBackground
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 20;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarPopupTheme
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 13;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -3762,111 +3773,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarSize
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarSize
         */
         public static final int Theme_actionBarSize = 18;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarSplitStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarTabBarStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 9;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarTabStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 8;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarTabTextStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 10;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarTheme
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 16;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionBarWidgetTheme
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionButtonStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 43;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionDropDownStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 38;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionMenuTextAppearance
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 21;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -3874,167 +3885,167 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionMenuTextColor
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 22;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeBackground
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 25;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeCloseButtonStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 24;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeCloseDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 27;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeCopyDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 29;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeCutDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 28;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeFindDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModePasteDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 30;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModePopupWindowStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 35;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeSelectAllDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeShareDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeSplitBackground
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 26;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 23;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionModeWebSearchDrawable
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionOverflowButtonStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 11;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:actionOverflowMenuStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:activityChooserViewStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 50;
         /**
@@ -4044,27 +4055,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:buttonBarButtonStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:buttonBarStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 44;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4075,11 +4086,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorAccent
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorAccent
         */
         public static final int Theme_colorAccent = 77;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4090,11 +4101,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorButtonNormal
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 81;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4105,11 +4116,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorControlActivated
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 79;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4120,11 +4131,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorControlHighlight
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 80;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4135,11 +4146,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorControlNormal
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 78;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4150,11 +4161,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorPrimary
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorPrimary
         */
         public static final int Theme_colorPrimary = 75;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4165,11 +4176,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorPrimaryDark
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 76;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4180,41 +4191,41 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:colorSwitchThumbNormal
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 82;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dividerHorizontal
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 49;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dividerVertical
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dividerVertical
         */
         public static final int Theme_dividerVertical = 48;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dropDownListViewStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 67;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4226,21 +4237,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:dropdownListPreferredItemHeight
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 39;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:editTextBackground
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:editTextBackground
         */
         public static final int Theme_editTextBackground = 56;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4248,41 +4259,41 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:editTextColor
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:editTextColor
         */
         public static final int Theme_editTextColor = 55;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:homeAsUpIndicator
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 42;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listChoiceBackgroundIndicator
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 74;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPopupWindowStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4294,11 +4305,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemHeight
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 62;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4310,11 +4321,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemHeightLarge
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 64;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4326,11 +4337,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemHeightSmall
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 63;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4342,11 +4353,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemPaddingLeft
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 65;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4358,31 +4369,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:listPreferredItemPaddingRight
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 66;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:panelBackground
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:panelBackground
         */
         public static final int Theme_panelBackground = 71;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:panelMenuListTheme
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 73;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4394,151 +4405,151 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:panelMenuListWidth
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 72;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupMenuStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 53;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupWindowStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:searchViewStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:selectableItemBackground
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 46;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:selectableItemBackgroundBorderless
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 47;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:spinnerDropDownItemStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 41;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:spinnerStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 40;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:switchStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:switchStyle
         */
         public static final int Theme_switchStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceLargePopupMenu
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 36;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceListItem
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 69;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceListItemSmall
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceSearchResultSubtitle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 59;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceSearchResultTitle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 58;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textAppearanceSmallPopupMenu
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 37;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4546,31 +4557,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:textColorSearchUrl
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 60;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:toolbarNavigationButtonStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:toolbarStyle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4580,11 +4591,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowActionBar
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowActionBar
         */
         public static final int Theme_windowActionBar = 1;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4594,11 +4605,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowActionBarOverlay
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 2;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4608,11 +4619,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowActionModeOverlay
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 3;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4627,11 +4638,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowFixedHeightMajor
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 7;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4646,11 +4657,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowFixedHeightMinor
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 5;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4665,11 +4676,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowFixedWidthMajor
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 4;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4684,7 +4695,7 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:windowFixedWidthMinor
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 6;
         /** Attributes that can be used with a Toolbar.
@@ -4695,26 +4706,26 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_theme edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription edu.auburn.eng.csse.comp3710.pjf0001.snmprint:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon edu.auburn.eng.csse.comp3710.pjf0001.snmprint:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight edu.auburn.eng.csse.comp3710.pjf0001.snmprint:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription edu.auburn.eng.csse.comp3710.pjf0001.snmprint:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon edu.auburn.eng.csse.comp3710.pjf0001.snmprint:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_theme edu.auburn.eng.csse.comp3710.pjf0001.snmprint:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title edu.auburn.eng.csse.comp3710.pjf0001.snmprint:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -4760,7 +4771,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4770,21 +4781,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:collapseContentDescription
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:collapseIcon
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4796,11 +4807,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetEnd
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 5;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4812,11 +4823,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetLeft
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 6;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4828,11 +4839,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetRight
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 7;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4844,11 +4855,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:contentInsetStart
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 4;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4860,11 +4871,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:maxButtonHeight
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 16;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4874,31 +4885,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:navigationContentDescription
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:navigationIcon
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:popupTheme
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:popupTheme
         */
         public static final int Toolbar_popupTheme = 8;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4908,31 +4919,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitle
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:subtitleTextAppearance
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#theme}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#theme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:theme
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:theme
         */
         public static final int Toolbar_theme = 17;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#title}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4942,11 +4953,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:title
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4958,11 +4969,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMarginBottom
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 15;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4974,11 +4985,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMarginEnd
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4990,11 +5001,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMarginStart
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 12;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5006,11 +5017,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMarginTop
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 14;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5022,17 +5033,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleMargins
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleMargins
         */
         public static final int Toolbar_titleMargins = 11;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:titleTextAppearance
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 9;
         /** Attributes that can be used with a View.
@@ -5042,8 +5053,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd edu.auburn.eng.csse.comp3710.pjf0001.snmprint:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart edu.auburn.eng.csse.comp3710.pjf0001.snmprint:paddingStart}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -5059,7 +5070,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int View_android_focusable = 0;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -5071,11 +5082,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:paddingEnd
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
-          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.umphrda.prefdemo1.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link edu.auburn.eng.csse.comp3710.pjf0001.snmprint.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -5087,7 +5098,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name edu.auburn.eng.csse.comp3710.umphrda.prefdemo1:paddingStart
+          @attr name edu.auburn.eng.csse.comp3710.pjf0001.snmprint:paddingStart
         */
         public static final int View_paddingStart = 1;
         /** Attributes that can be used with a ViewStubCompat.
