@@ -1,0 +1,31 @@
+@startuml
+title Class Diagram
+
+class SplashScreen
+class MainActivity
+class Settings
+class PrintTask
+class PrintStatus
+
+SplashScreen : void picture
+SplashScreen : String projectName
+SplashScreen : String ourName
+SplashScreen : String title
+
+MainActivity : Button submit
+MainActivity : TextView outputText
+MainActivity : PrintStatus prntStat
+MainActivity : AsyncTask theTask
+MainActivity : onCreate()
+MainActivity : onCreateOptionsMenu()
+MainActivity : printTask()
+
+Settings : addToDatabase()
+
+PrintStatus : snmpGet()
+
+MainActivity "1" -- "1" Settings : calls >
+MainActivity "1" - "*" PrintTask : launches >
+PrintTask "1" -- "1" PrintStatus : gets >
+
+@enduml
