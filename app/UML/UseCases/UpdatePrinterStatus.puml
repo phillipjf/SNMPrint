@@ -1,0 +1,11 @@
+@startuml
+actor User
+actor Snmp
+
+rectangle {
+User -- (Settings)
+Snmp -- (Update Printer Status)
+(Settings) .> (Update Printer Status) : includes
+}
+
+@enduml

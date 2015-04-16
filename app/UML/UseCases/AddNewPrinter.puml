@@ -1,0 +1,10 @@
+@startuml
+actor User
+actor Snmp
+
+rectangle {
+User -- (Settings)
+Snmp -- (Add Printer)
+(Settings) .> (Add Printer) : includes
+}
+@enduml
