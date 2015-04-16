@@ -51,6 +51,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.settings, menu);
+        getMenuInflater().inflate(R.menu.addprinter, menu);
         return true;
     }
 
@@ -61,6 +62,10 @@ public class MainActivity extends ActionBarActivity {
             case R.id.menu_settings:
                 Intent i = new Intent(this, UserSettingActivity.class);
                 startActivityForResult(i, RESULT_SETTINGS);
+                break;
+            case R.id.add_printer:
+                Intent j = new Intent(this, AddPrinterActivity.class);
+                startActivityForResult(j, RESULT_SETTINGS);
                 break;
         }
         return true;
@@ -92,6 +97,12 @@ public class MainActivity extends ActionBarActivity {
 
         builder.append("\n Mod Number: "
                 + sharedPrefs.getInt("modified", 0));
+
+        builder.append("\n\n Printer Name: "
+                + sharedPrefs.getString("printerName", "NULL"));
+
+        builder.append("\n IP Address: 131.204.116."
+                + sharedPrefs.getString("ipEnd", "NULL"));
 
         TextView settingsTextView = (TextView) findViewById(R.id.textUserSettings);
 

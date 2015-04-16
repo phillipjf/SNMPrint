@@ -1322,11 +1322,12 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0b002d;
         public static final int action_mode_close_button=0x7f0b0020;
         public static final int activity_chooser_view_content=0x7f0b0021;
+        public static final int add_printer=0x7f0b0048;
         public static final int always=0x7f0b0016;
         public static final int beginning=0x7f0b0013;
         public static final int checkbox=0x7f0b0029;
         public static final int collapseActionView=0x7f0b0017;
-        public static final int container=0x7f0b0047;
+        public static final int container=0x7f0b003f;
         public static final int decor_content_parent=0x7f0b002f;
         public static final int default_activity_button=0x7f0b0024;
         public static final int dialog=0x7f0b001b;
@@ -1341,18 +1342,18 @@ containing a value of this type.
         public static final int icon=0x7f0b0026;
         public static final int ifRoom=0x7f0b0018;
         public static final int image=0x7f0b0023;
-        public static final int imgLogo=0x7f0b0046;
-        public static final int ipEnd=0x7f0b0040;
-        public static final int ipTitle=0x7f0b003f;
+        public static final int imgLogo=0x7f0b0047;
+        public static final int ipEnd=0x7f0b0041;
+        public static final int ipTitle=0x7f0b0040;
         public static final int listMode=0x7f0b0009;
         public static final int list_item=0x7f0b0025;
-        public static final int menu_settings=0x7f0b0048;
+        public static final int menu_settings=0x7f0b0049;
         public static final int middle=0x7f0b0015;
         public static final int never=0x7f0b0019;
         public static final int none=0x7f0b000e;
         public static final int normal=0x7f0b000a;
-        public static final int printDetails=0x7f0b0043;
-        public static final int printName=0x7f0b0042;
+        public static final int printDetails=0x7f0b0044;
+        public static final int printName=0x7f0b0043;
         public static final int progress_circular=0x7f0b0005;
         public static final int progress_horizontal=0x7f0b0006;
         public static final int radio=0x7f0b002b;
@@ -1371,11 +1372,11 @@ containing a value of this type.
         public static final int showHome=0x7f0b0010;
         public static final int showTitle=0x7f0b0011;
         public static final int split_action_bar=0x7f0b0007;
-        public static final int submitButton=0x7f0b0044;
+        public static final int submitButton=0x7f0b0045;
         public static final int submit_area=0x7f0b003c;
         public static final int tabMode=0x7f0b000b;
-        public static final int textUserSettings=0x7f0b0045;
-        public static final int textView2=0x7f0b0041;
+        public static final int textUserSettings=0x7f0b0046;
+        public static final int textView2=0x7f0b0042;
         public static final int title=0x7f0b0027;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
@@ -1409,14 +1410,16 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f040014;
         public static final int abc_search_view=0x7f040015;
         public static final int abc_simple_dropdown_hint=0x7f040016;
-        public static final int activity_main=0x7f040017;
-        public static final int activity_oldsplash=0x7f040018;
-        public static final int activity_settings=0x7f040019;
-        public static final int activity_splash=0x7f04001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f04001b;
+        public static final int activity_addprinter=0x7f040017;
+        public static final int activity_main=0x7f040018;
+        public static final int activity_oldsplash=0x7f040019;
+        public static final int activity_settings=0x7f04001a;
+        public static final int activity_splash=0x7f04001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f04001c;
     }
     public static final class menu {
-        public static final int settings=0x7f0f0000;
+        public static final int addprinter=0x7f0f0000;
+        public static final int settings=0x7f0f0001;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1438,20 +1441,26 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f0d000d;
         public static final int abc_shareactionprovider_share_with_application=0x7f0d000e;
         public static final int abc_toolbar_collapse_description=0x7f0d000f;
-        public static final int app_name=0x7f0d0010;
-        public static final int hello_world=0x7f0d0011;
-        public static final int menu_settings=0x7f0d0012;
-        public static final int pref_id=0x7f0d0013;
-        public static final int pref_mod=0x7f0d0014;
-        public static final int pref_send_report=0x7f0d0015;
-        public static final int pref_send_report_summary=0x7f0d0016;
-        public static final int pref_sync_frequency=0x7f0d0017;
-        public static final int pref_sync_frequency_summary=0x7f0d0018;
-        public static final int pref_update_setting=0x7f0d0019;
-        public static final int pref_user_name=0x7f0d001a;
-        public static final int pref_user_name_summary=0x7f0d001b;
-        public static final int pref_user_profile=0x7f0d001c;
-        public static final int title_activity_main=0x7f0d001d;
+        public static final int add_printer=0x7f0d0010;
+        public static final int app_name=0x7f0d0011;
+        public static final int hello_world=0x7f0d0012;
+        public static final int ip_end_summary=0x7f0d0013;
+        public static final int ip_title=0x7f0d0014;
+        public static final int menu_settings=0x7f0d0015;
+        public static final int pref_id=0x7f0d0016;
+        public static final int pref_mod=0x7f0d0017;
+        public static final int pref_send_report=0x7f0d0018;
+        public static final int pref_send_report_summary=0x7f0d0019;
+        public static final int pref_sync_frequency=0x7f0d001a;
+        public static final int pref_sync_frequency_summary=0x7f0d001b;
+        public static final int pref_update_setting=0x7f0d001c;
+        public static final int pref_user_name=0x7f0d001d;
+        public static final int pref_user_name_summary=0x7f0d001e;
+        public static final int pref_user_profile=0x7f0d001f;
+        public static final int print_name=0x7f0d0020;
+        public static final int print_name_summary=0x7f0d0021;
+        public static final int print_title=0x7f0d0022;
+        public static final int title_activity_main=0x7f0d0023;
     }
     public static final class style {
         /**  Customize your theme here. 
@@ -1694,7 +1703,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0e00df;
     }
     public static final class xml {
-        public static final int settings=0x7f060000;
+        public static final int printers=0x7f060000;
+        public static final int settings=0x7f060001;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
