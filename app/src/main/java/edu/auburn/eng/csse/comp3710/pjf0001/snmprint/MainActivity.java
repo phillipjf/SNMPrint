@@ -1,15 +1,12 @@
 package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.content.SharedPreferences;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceFragment;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,8 +34,15 @@ public class MainActivity extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        showUserSettings();
-
+        /*
+        // Display the fragment as the main content.
+        FragmentManager mFragmentManager = getFragmentManager();
+        FragmentTransaction mFragmentTransaction = mFragmentManager
+                .beginTransaction();
+        PrefsFragment mPrefsFragment = new PrefsFragment();
+        mFragmentTransaction.replace(android.R.id.content, mPrefsFragment);
+        mFragmentTransaction.commit();
+     */
         outputText = (TextView) findViewById(R.id.printDetails);
         submit = (Button) findViewById(R.id.submitButton);
         submit.setOnClickListener(new Button.OnClickListener() {
@@ -48,53 +52,15 @@ public class MainActivity extends ActionBarActivity
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.settings, menu);
-        return true;
-    }
+    public static class PrefsFragment extends PreferenceFragment {
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
 
-            case R.id.menu_settings:
-                Intent i = new Intent(this, UserSettingActivity.class);
-                startActivityForResult(i, RESULT_SETTINGS);
-                break;
+            // Load the preferences from an XML resource
+            addPreferencesFromResource(R.xml.preferences);
         }
-        return true;
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        showUserSettings();
-
-    }
-
-    private void showUserSettings() {
-        SharedPreferences sharedPrefs = PreferenceManager
-                .getDefaultSharedPreferences(this);
-
-        StringBuilder builder = new StringBuilder();
-
-        builder.append("\n Username: "
-                + sharedPrefs.getString("prefUsername", "NULL"));
-
-        builder.append("\n Send report:"
-                + sharedPrefs.getBoolean("prefSendReport", false));
-
-        builder.append("\n Sync Frequency: "
-                + sharedPrefs.getString("prefSyncFrequency", "NULL"));
-
-        builder.append("\n Mod Number: "
-                + sharedPrefs.getInt("modified", 0));
-
-        TextView settingsTextView = (TextView) findViewById(R.id.textUserSettings);
-
-        settingsTextView.setText(builder.toString());
     }
 
     private class printTask extends AsyncTask<String, Void, String>{

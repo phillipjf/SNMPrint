@@ -20,7 +20,6 @@ public class PrintStatus extends Activity{
 	public static final String OID_MAGENTA = "1.4";
 	TextView outText;
 
-
 		/*
          * This method process the request and Get the Value on the device
          * @returns String. community=READ_COMMUNITY
