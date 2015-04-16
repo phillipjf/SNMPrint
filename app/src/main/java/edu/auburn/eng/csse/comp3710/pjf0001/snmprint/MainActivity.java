@@ -32,11 +32,13 @@ public class MainActivity extends Activity
         setContentView(R.layout.activity_main);
         Log.i("DEBUG", "made it to onCreate");
 
+        outputText = (TextView) findViewById(R.id.printDetails);
+
         submit = (Button) findViewById(R.id.submitButton);
         submit.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 new printTask().execute();
-                //Log.i("DEBUG", "made it to onCreate submit");
+                Log.i("DEBUG", "made it to onCreate submit");
             }
         });
     }
@@ -48,11 +50,19 @@ public class MainActivity extends Activity
         return true;
     }
 
-    private class printTask extends AsyncTask<String, Void, Integer>{
+    private class printTask extends AsyncTask<String, Void, String>{
         @Override
-        protected Integer doInBackground(String... params) {
+        protected String doInBackground(String... params) {
+            String returnVal = prntStat.snmpGet(BASE_IP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL+OID_BLACK);
+            returnVal += prntStat.snmpGet(BASE_IP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL+OID_CYAN);
+            returnVal += prntStat.snmpGet(BASE_IP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL+OID_MAGENTA);
+            returnVal += prntStat.snmpGet(BASE_IP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL+OID_YELLOW);
             Log.i("DEBUG", "made it to output");
-            return prntStat.snmpGet(BASE_IP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL+OID_BLACK);
+            return returnVal;
+        }
+        protected void onPostExecute(String str)
+        {
+            outputText.setText(str);
         }
     }
 

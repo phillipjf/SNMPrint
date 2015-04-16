@@ -42,7 +42,7 @@
         <TextView
             android:layout_width="333dp"
             android:layout_height="wrap_content"
-            android:id="@+id/outputText"
+            android:id="@+id/printDetails"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.58"
             android:text="something" />
