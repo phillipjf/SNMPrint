@@ -45,31 +45,18 @@ public class PrintStatus extends Activity{
 			//extract the corresponding value from the pair; it's the second element in the sequence
 			SNMPObject snmpValue = pair.getSNMPObjectAt(1);
 
-			//printGUI.model.addElement(printGUI.printerName.getText());
-
-			//view = (TextView) findViewById(R.id.printDetails);
-
 			str = snmpValue.toString();
 			if(strOID == OID_BASE_LEVEL+OID_BLACK){
-				//view.addElement("BLACK: " + str + "%");
                 printValues += ("BLACK" + str + "%\n");
-				Log.i("DEBUG", "made it to black");
-				//System.out.println("BLACK: "+ str +"%");
 			}
 			else if(strOID == OID_BASE_LEVEL+OID_YELLOW){
-				//printGUI.model.addElement("YELLOW: "+ str +"%");
 				printValues += ("Yellow" + str + "%\n");
-				//System.out.println("YELLOW: "+ str +"%");
 			}
 			if(strOID == OID_BASE_LEVEL+OID_CYAN){
-				//printGUI.model.addElement("CYAN: "+ str +"%");
 				printValues += ("CYAN" + str + "%\n");
-				//System.out.println("CYAN: "+ str +"%");
 			}
 			if(strOID == OID_BASE_LEVEL+OID_MAGENTA) {
-				//printGUI.model.addElement("MAGENTA: "+ str +"%");
 				printValues += ("MAGENTA" + str + "%\n");
-				//System.out.println("MAGENTA: "+ str +"%");
 			}
 		}
 		catch(Exception e){
