@@ -1,4 +1,4 @@
-package edu.auburn.eng.csse.comp3710.umphrda.prefdemo1;
+package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
