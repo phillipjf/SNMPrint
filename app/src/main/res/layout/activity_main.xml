@@ -53,5 +53,13 @@
             android:text="SUBMIT"
             android:id="@+id/submitButton"
             android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textUserSettings"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.39" />
     </LinearLayout>
 </RelativeLayout>
