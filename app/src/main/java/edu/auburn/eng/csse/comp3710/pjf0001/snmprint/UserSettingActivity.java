@@ -1,6 +1,5 @@
 package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.app.Activity;

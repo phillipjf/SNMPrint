@@ -6,9 +6,7 @@ package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
 import android.app.Activity;
 import android.widget.TextView;
-
 import java.net.InetAddress;
-
 import snmp.*;
 
 public class PrintStatus extends Activity {
