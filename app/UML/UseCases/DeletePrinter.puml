@@ -1,8 +1,0 @@
-@startuml
-actor User
-
-rectangle {
-User -- (Settings)
-(Settings) .> (Delete Printer) : includes
-}
-@enduml

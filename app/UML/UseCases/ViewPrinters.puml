@@ -1,9 +1,9 @@
 @startuml
-title AddNewPrinter
+title ViewPrinter
 actor User
 
 rectangle {
 User -- (Menu)
-(Menu) .> (Add Printer) : includes
+(Menu) .> (Show Printers) : selects
 }
 @enduml

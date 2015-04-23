@@ -3,29 +3,33 @@ title Class Diagram
 
 class SplashScreen
 class MainActivity
-class Settings
-class PrintTask
+class UserSettingActivity
+class AddPrinterActivity
 class PrintStatus
 
-SplashScreen : void picture
-SplashScreen : String projectName
-SplashScreen : String ourName
-SplashScreen : String title
+SplashScreen : #onCreate(savedInstanceState : Bundle) : void
 
-MainActivity : Button submit
-MainActivity : TextView outputText
-MainActivity : PrintStatus prntStat
-MainActivity : AsyncTask theTask
-MainActivity : onCreate()
-MainActivity : onCreateOptionsMenu()
-MainActivity : printTask()
+MainActivity : -Button submit
+MainActivity : -TextView outputText
+MainActivity : -PrintStatus prntStat
+MainActivity : -AsyncTask theTask
+MainActivity : #onCreate(savedInstanceState : Bundle) : void
+MainActivity : +onCreateOptionsMenu(menu : Menu) : boolean
+MainActivity : +onOptionsItemSelected(item : MenuItem) : boolean
+MainActivity : #onActivityResult(requestCode : int, resultCode : int, data : Intent) : void
+MainActivity : -showUserSettings() : void
 
-Settings : addToDatabase()
+UserSettingActivity : #onCreate(savedInstanceState : Bundle) : void
+UserSettingActivity : #onPause() : void
 
-PrintStatus : snmpGet()
+AddPrinterActivity : #onCreate(savedInstanceState : Bundle) : void
+AddPrinterActivity : #onPause() : void
 
-MainActivity "1" -- "1" Settings : calls >
-MainActivity "1" - "*" PrintTask : launches >
-PrintTask "1" -- "1" PrintStatus : gets >
+PrintStatus : -outText : TextView
+PrintStatus : +snmpGet(strIPAddress : String, community : String, iSNMPVersion : int, strOID : String) : String
+
+MainActivity "1" -- "1" UserSettingActivity : launches >
+MainActivity "1" - "1" AddPrinterActivity : launches >
+MainActivity "1" -- "1" PrintStatus : calls >
 
 @enduml
