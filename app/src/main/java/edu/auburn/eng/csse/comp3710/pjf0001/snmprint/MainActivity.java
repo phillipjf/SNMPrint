@@ -35,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        showUserSettings();
+        //showUserSettings();
 
         outputText = (TextView) findViewById(R.id.printDetails);
         submit = (Button) findViewById(R.id.submitButton);
@@ -51,6 +51,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         //getMenuInflater().inflate(R.menu.settings, menu);
+        //getMenuInflater().inflate(R.menu.mainactivity, menu);
         getMenuInflater().inflate(R.menu.addprinter, menu);
         return true;
     }
@@ -58,11 +59,12 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-
+            /*
             case R.id.menu_settings:
                 Intent i = new Intent(this, UserSettingActivity.class);
                 startActivityForResult(i, RESULT_SETTINGS);
                 break;
+            */
             case R.id.add_printer:
                 Intent j = new Intent(this, printerController.class);
                 startActivityForResult(j, RESULT_SETTINGS);
@@ -75,9 +77,16 @@ public class MainActivity extends ActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        showUserSettings();
+        //showUserSettings();
+        refreshStatus();
     }
 
+    private void refreshStatus(){
+
+    }
+
+
+    /*
     private void showUserSettings() {
         SharedPreferences sharedPrefs = PreferenceManager
                 .getDefaultSharedPreferences(this);
@@ -106,6 +115,8 @@ public class MainActivity extends ActionBarActivity {
 
         settingsTextView.setText(builder.toString());
     }
+    */
+
 
     private class printTask extends AsyncTask<String, Void, String> {
         @Override
