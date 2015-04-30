@@ -1,0 +1,17 @@
+@startuml
+title Domain Model
+class Printer
+class PrinterList
+class User
+class PrinterHub
+class PrinterCreator
+class PrinterUpdater
+
+User"1" -- "1"PrinterHub : views >
+User"1" - "1"PrinterCreator : uses
+PrinterCreator "1" -* "*"Printer : creates
+Printer"*" - "1"PrinterList : added to >
+PrinterCreator"1" -- "1"PrinterUpdater : requests update >
+PrinterUpdater"1" -- "1"PrinterList : uses >
+PrinterHub"1" -- "1"PrinterUpdater : updates <
+@enduml

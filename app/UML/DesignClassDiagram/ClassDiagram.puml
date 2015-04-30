@@ -1,17 +1,25 @@
 @startuml
 title Class Diagram
 
+class Activity
+class ActionBarActivity
 class SplashScreen
 class MainActivity
-class UserSettingActivity
-class AddPrinterActivity
-class PrintStatus
+class PrinterController
+class snmpServer
+class Printer
+
+Activity <|-- ActionBarActivity
+MainActivity --|> ActionBarActivity
+SplashScreen ---|> Activity
+PrinterController ---|> Activity
+snmpServer ---|> Activity
 
 SplashScreen : #onCreate(savedInstanceState : Bundle) : void
 
 MainActivity : -Button submit
 MainActivity : -TextView outputText
-MainActivity : -PrintStatus prntStat
+MainActivity : -snmpServer prntStat
 MainActivity : -AsyncTask theTask
 MainActivity : #onCreate(savedInstanceState : Bundle) : void
 MainActivity : +onCreateOptionsMenu(menu : Menu) : boolean
@@ -19,17 +27,18 @@ MainActivity : +onOptionsItemSelected(item : MenuItem) : boolean
 MainActivity : #onActivityResult(requestCode : int, resultCode : int, data : Intent) : void
 MainActivity : -showUserSettings() : void
 
-UserSettingActivity : #onCreate(savedInstanceState : Bundle) : void
-UserSettingActivity : #onPause() : void
+PrinterController : #onCreate(savedInstanceState : Bundle) : void
+PrinterController : #onPause() : void
 
-AddPrinterActivity : #onCreate(savedInstanceState : Bundle) : void
-AddPrinterActivity : #onPause() : void
+snmpServer : -outText : TextView
+snmpServer : +snmpGet(strIPAddress : String, community : String, iSNMPVersion : int, strOID : String) : String
 
-PrintStatus : -outText : TextView
-PrintStatus : +snmpGet(strIPAddress : String, community : String, iSNMPVersion : int, strOID : String) : String
+Printer : -ipAddr : String
+Printer : -name : String
 
-MainActivity "1" -- "1" UserSettingActivity : launches >
-MainActivity "1" - "1" AddPrinterActivity : launches >
-MainActivity "1" -- "1" PrintStatus : calls >
+MainActivity "1" -- "1" PrinterController : launches >
+MainActivity "1" - "1" snmpServer : calls >
+
+PrinterController "1" -- "1" Printer : adds >
 
 @enduml
