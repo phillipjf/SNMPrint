@@ -1,9 +1,8 @@
 package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
+import android.support.v7.app.ActionBar;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -35,7 +34,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //showUserSettings();
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayUseLogoEnabled(true);
 
         outputText = (TextView) findViewById(R.id.printDetails);
         submit = (Button) findViewById(R.id.submitButton);
@@ -50,8 +50,6 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.settings, menu);
-        //getMenuInflater().inflate(R.menu.mainactivity, menu);
         getMenuInflater().inflate(R.menu.addprinter, menu);
         return true;
     }
@@ -65,7 +63,7 @@ public class MainActivity extends ActionBarActivity {
                 startActivityForResult(i, RESULT_SETTINGS);
                 break;
             */
-            case R.id.add_printer:
+            case R.id.action_add_printer:
                 Intent j = new Intent(this, printerController.class);
                 startActivityForResult(j, RESULT_SETTINGS);
                 break;
@@ -77,7 +75,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        //showUserSettings();
         refreshStatus();
     }
 
