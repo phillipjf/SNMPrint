@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.net.InetAddress;
 import snmp.*;
 
-public class PrintStatus extends Activity {
+public class snmpServer extends Activity {
     public static final String OID_BASE_LEVEL = "1.3.6.1.2.1.43.11.1.1.9.";
     public static final String OID_BLACK = "1.1";
     public static final String OID_YELLOW = "1.2";
@@ -21,7 +21,7 @@ public class PrintStatus extends Activity {
      * This method process the request and Get the Value on the device
      * @returns String. community=READ_COMMUNITY
      */
-    public String snmpGet(String strIPAddress, String community, int iSNMPVersion, String strOID) {
+    public String getPrintStatus(String strIPAddress, String community, int iSNMPVersion, String strOID) {
         String str = "";
         String printValues = new String();
         try {

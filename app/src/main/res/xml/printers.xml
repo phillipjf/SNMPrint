@@ -11,7 +11,7 @@
             android:title="@string/ip_title"
             android:summary="@string/ip_end_summary"
             android:key="ipEnd"/>
-    </PreferenceCategory>
 
+    </PreferenceCategory>
 
 </PreferenceScreen>

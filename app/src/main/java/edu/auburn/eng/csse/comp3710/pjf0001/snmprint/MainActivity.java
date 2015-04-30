@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
 
     Button submit;
     TextView outputText;
-    PrintStatus prntStat = new PrintStatus();
+    snmpServer prntStat = new snmpServer();
     AsyncTask theTask = new printTask();
 
     private static final int RESULT_SETTINGS = 1;
@@ -50,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.settings, menu);
+        //getMenuInflater().inflate(R.menu.settings, menu);
         getMenuInflater().inflate(R.menu.addprinter, menu);
         return true;
     }
@@ -64,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
                 startActivityForResult(i, RESULT_SETTINGS);
                 break;
             case R.id.add_printer:
-                Intent j = new Intent(this, AddPrinterActivity.class);
+                Intent j = new Intent(this, printerController.class);
                 startActivityForResult(j, RESULT_SETTINGS);
                 break;
         }
@@ -76,8 +76,6 @@ public class MainActivity extends ActionBarActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         showUserSettings();
-
-
     }
 
     private void showUserSettings() {
@@ -116,10 +114,10 @@ public class MainActivity extends ActionBarActivity {
             EditText name = (EditText) findViewById(R.id.printName);
             String useIP = ipEnd.getText().toString();
             String returnVal = name.getText().toString() + "\n";
-            returnVal += prntStat.snmpGet(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_BLACK);
-            returnVal += prntStat.snmpGet(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN);
-            returnVal += prntStat.snmpGet(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA);
-            returnVal += prntStat.snmpGet(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW);
+            returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_BLACK);
+            returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN);
+            returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA);
+            returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW);
             return returnVal;
         }
 

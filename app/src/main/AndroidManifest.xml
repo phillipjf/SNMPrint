@@ -31,7 +31,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity android:name=".UserSettingActivity"/>
-        <activity android:name=".AddPrinterActivity"/>
+        <activity android:name=".printerController"/>
     </application>
 
 </manifest>

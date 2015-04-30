@@ -25,6 +25,8 @@
 
     <string name="ip_title">131.204.116.</string>
     <string name="ip_end_summary">176</string>
+
+    <string name="addprinter">Add Printer</string>
     
     
 </resources>
