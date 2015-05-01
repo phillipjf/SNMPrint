@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,30 +67,34 @@ public class dbHandler extends SQLiteOpenHelper{
     public Printer getPrinter(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = db.query(TABLE_PRINTERS, new String[] { KEY_ID,
-                        KEY_NAME, KEY_IP }, KEY_ID + "=?",
+        Cursor cursor = db.query(TABLE_PRINTERS, new String[] { KEY_ID, KEY_NAME, KEY_IP }, KEY_ID + "=?",
                 new String[] { String.valueOf(id) }, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
-        Printer p = new Printer(cursor.getString(0), cursor.getString(1));
+        Printer p = new Printer();
+        p.setID(cursor.getLong(0));
+        p.setPrinterName(cursor.getString(1));
+        p.setIP(cursor.getString(2));
         // return contact
         return p;
     }
 
     // Getting All Printers
-    public List<Printer> getAllPrinters() {
-        List<Printer> printerList = new ArrayList<Printer>();
+    public ArrayList<Printer> getAllPrinters() {
+        ArrayList<Printer> printerList = new ArrayList<Printer>();
         // Select All Query
         String selectQuery = "SELECT  * FROM " + TABLE_PRINTERS;
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
-
         // looping through all rows and adding to list
         if (cursor.moveToFirst()) {
             do {
-                Printer p = new Printer(cursor.getString(1),cursor.getString(2));
+                Printer p = new Printer();
+                p.setID(cursor.getLong(0));
+                p.setPrinterName(cursor.getString(1));
+                p.setIP(cursor.getString(2));
                 //contact.setID(cursor.getString(0));
                 //contact.setName(cursor.getString(1));
                 //contact.setPhoneNumber(cursor.getString(2));
@@ -99,7 +102,6 @@ public class dbHandler extends SQLiteOpenHelper{
                 printerList.add(p);
             } while (cursor.moveToNext());
         }
-
         // return contact list
         return printerList;
     }

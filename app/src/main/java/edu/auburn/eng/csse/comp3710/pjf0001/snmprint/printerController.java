@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 
 public class printerController extends ActionBarActivity {
     Button addPrinter;
@@ -25,87 +27,100 @@ public class printerController extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.addprinter);
+
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayUseLogoEnabled(true);
 
-
         final EditText nameText = (EditText)findViewById(R.id.printerName);
         final EditText ipText = (EditText)findViewById(R.id.ipAddr);
         final ListView list = (ListView)findViewById(R.id.printerList);
-        //updateList(list);
 
-        //ListView lv1=(ListView)findViewById(R.id.listView1);
-        Printer data[] = new Printer[]
-                {
-                        new Printer("Heading 1", "Subheading 1"),
-                        new Printer("Heading 2", "Subheading 2"),
-                        new Printer("Heading 3", "Subheading 3")
-                };
-        LevelAdapter adp=new LevelAdapter(this, R.layout.list_item, data);
-        list.setAdapter(adp);
-        //
+        updateList(list);
+
         addPrinter = (Button) findViewById(R.id.addPrinter);
         addPrinter.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 String pName = nameText.getText().toString();
                 String pIP = ipText.getText().toString();
-                Printer p = new Printer(pName, pIP);
+                Printer p = new Printer();
+                p.setPrinterName(pName);
+                p.setIP(pIP);
+                nameText.setText("");
+                ipText.setText("");
                 db.addPrinter(p);
-                //updateList(list);
+                updateList(list);
             }
         });
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                db.deletePrinterbyID(id);
-                editItemAlert(id);
-                //updateList(list);
+                editItemAlert(position);
+                updateList(list);
             }
         });
     }
-    void editItemAlert(final long id){
+    void editItemAlert(final int position){
         AlertDialog.Builder cd = new AlertDialog.Builder(printerController.this);
-        cd.setTitle("Edit Printer");
 
         LayoutInflater layoutInflater = (LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view=layoutInflater.inflate(R.layout.edit_item_alert,null);
+        View view = layoutInflater.inflate(R.layout.edit_item_alert, null);
 
-        Button btn = (Button)view.findViewById(R.id.idButton);
-        btn.setOnClickListener(new Button.OnClickListener(){
+        cd.setTitle("Edit Printer");
+
+        final AlertDialog dialog = cd.create();
+
+        final ListView list = (ListView)findViewById(R.id.printerList);
+        ArrayList<Printer> pList=  db.getAllPrinters();
+        final Printer p = pList.get(position);
+
+        final EditText printerName = (EditText)view.findViewById(R.id.alertPrinterName);
+        final EditText printerIP = (EditText)view.findViewById(R.id.alertipAddr);
+        printerName.setText(p.getPrinterName());
+        printerIP.setText(p.getIP());
+
+        Button btnDelete = (Button)view.findViewById(R.id.deleteButton);
+        Button btnOkay = (Button)view.findViewById(R.id.okButton);
+        Button btnCancel = (Button)view.findViewById(R.id.cancelButton);
+
+        btnDelete.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View arg0){
+                //Delete the item from db
+                db.deletePrinter(p);
+                Toast.makeText(getApplicationContext(), "Delete This Printer: " + p.getPrinterName(), Toast.LENGTH_LONG).show();
+                updateList(list);
+                dialog.dismiss();
+            }
+        });
+
+        btnOkay.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                //Delete the item from db
-                db.deletePrinterbyID(id);
-                Toast.makeText(getApplicationContext(), "Delete This Printer", Toast.LENGTH_LONG).show();
-            }});
-
-        cd.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface arg0, int arg1) {
-                // Update the printer item based off input
-
+                //update the item
+                p.setPrinterName(printerName.getText().toString());
+                p.setIP(printerIP.getText().toString());
+                updateList(list);
+                dialog.dismiss();
             }
         });
 
-        cd.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        btnCancel.setOnClickListener(new Button.OnClickListener() {
             @Override
-            public void onClick(DialogInterface arg0, int arg1) {
-                // Do nothing
-
-
+            public void onClick(View arg0) {
+                //do nothing
+                dialog.dismiss();
             }
         });
 
-        cd.setView(view);
-        cd.show();
+        dialog.setView(view);
+        dialog.show();
     }
 
     public void updateList(ListView list){
-        ArrayAdapter<Printer> mArrayAdapter = new ArrayAdapter<Printer>(this, android.R.layout.simple_list_item_1, android.R.id.text1, db.getAllPrinters());
-
-        list.setAdapter(mArrayAdapter);
+        LevelAdapter adp=new LevelAdapter(this, R.layout.list_item, db.getAllPrinters());
+        list.setAdapter(adp);
     }
 
     protected void onPause(){

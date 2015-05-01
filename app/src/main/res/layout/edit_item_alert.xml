@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Printer Name"
-        android:id="@+id/printerNameTitle" />
+        android:id="@+id/printerNameTitle"
+        android:textSize="20dp"
+        android:textColor="#ff000000" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/alertPrinterName" />
+        android:id="@+id/alertPrinterName"
+        android:textColor="#ff000000" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="IP Address"
-        android:id="@+id/ipAddrTitle" />
+        android:id="@+id/ipAddrTitle"
+        android:textSize="20dp"
+        android:textColor="#ff000000" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,25 +33,45 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="131.204.116."
             android:id="@+id/titleMainIP"
             android:layout_gravity="bottom|left"
-            android:gravity="fill" />
-
+            android:gravity="fill"
+            android:textSize="20dp"
+            android:textColor="#ff000000" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
-            android:ems="10"
             android:id="@+id/alertipAddr"
-            android:layout_gravity="bottom|right"/>
+            android:layout_gravity="bottom|right"
+            android:textColor="#ff000000" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/idButton"
-        android:layout_width="fill_parent"
+    <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Delete This Printer"
-        />
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete This Printer"/>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                />
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OK"
+                />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
