@@ -1,0 +1,24 @@
+@startuml
+title Use Case Diagram
+actor User
+actor SNMP
+actor dbHelper
+
+rectangle {
+User -> (Edit Printer)
+User <- (Show Printer Status)
+SNMP ---> (Refresh Status)
+dbHelper <- (Update Database)
+dbHelper -> (Get Printer From Database)
+
+(Edit Printer) ..> (Add Printer) : <<includes>>
+(Edit Printer) ..> (Remove Printer) : <<includes>>
+(Edit Printer) ..> (Update Printer Details) : <<includes>>
+(Add Printer) ..> (Update Database) : <<includes>>
+(Remove Printer) ..> (Update Database) : <<includes>>
+(Update Printer Details) ..> (Update Database) : <<includes>>
+
+(Show Printer Status) ..> (Get Printer From Database) : <<includes>>
+(Get Printer From Database) ..> (Refresh Status) : <<includes>>
+}
+@enduml

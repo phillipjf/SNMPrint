@@ -1,0 +1,27 @@
+@startuml
+title System Sequence Diagram
+actor User as u
+participant App as a
+participant SNMP as s
+participant dbHandler as d
+
+u -> a : Edit Printer
+par while !doneEditing
+opt Add Printer
+a -> d : Update Database
+end
+opt Remove Printer
+ a -> d : Update Database
+end
+opt Update Printer Details
+a -> d : Update Database
+end
+end
+u -> a : Show Printer Status
+par while Printers still in list
+a -> s : Get Printer From Database
+s -> d : Refresh Status
+end
+u <-- a : Display Status
+
+@enduml
