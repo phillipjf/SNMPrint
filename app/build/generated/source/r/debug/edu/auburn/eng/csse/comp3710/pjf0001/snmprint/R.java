@@ -1311,7 +1311,7 @@ containing a value of this type.
         public static final int splash=0x7f020038;
     }
     public static final class id {
-        public static final int action_add_printer=0x7f0a0053;
+        public static final int action_add_printer=0x7f0a0055;
         public static final int action_bar=0x7f0a0031;
         public static final int action_bar_activity_content=0x7f0a0000;
         public static final int action_bar_container=0x7f0a0030;
@@ -1325,7 +1325,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_refresh=0x7f0a0054;
+        public static final int action_refresh=0x7f0a0056;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int addPrinter=0x7f0a004d;
         public static final int alertPrinterName=0x7f0a004f;
@@ -1358,7 +1358,7 @@ containing a value of this type.
         public static final int listMode=0x7f0a0009;
         public static final int list_item=0x7f0a0025;
         public static final int mainIP=0x7f0a004b;
-        public static final int menu_settings=0x7f0a0055;
+        public static final int menu_settings=0x7f0a0057;
         public static final int middle=0x7f0a0015;
         public static final int never=0x7f0a0019;
         public static final int none=0x7f0a000e;
@@ -1393,6 +1393,8 @@ containing a value of this type.
         public static final int textView2=0x7f0a0042;
         public static final int title=0x7f0a0027;
         public static final int titleMainIP=0x7f0a0050;
+        public static final int txtTitle=0x7f0a0053;
+        public static final int txtTitle2=0x7f0a0054;
         public static final int up=0x7f0a0008;
         public static final int useLogo=0x7f0a0012;
         public static final int withText=0x7f0a001a;
@@ -1433,7 +1435,8 @@ containing a value of this type.
         public static final int activity_splash2=0x7f03001c;
         public static final int addprinter=0x7f03001d;
         public static final int edit_item_alert=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int list_item=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class menu {
         public static final int addprinter=0x7f0e0000;

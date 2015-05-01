@@ -51,7 +51,7 @@ public class dbHandler extends SQLiteOpenHelper{
     }
 
     // Adding new printer
-    public void addContact(Printer p) {
+    public void addPrinter(Printer p) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();

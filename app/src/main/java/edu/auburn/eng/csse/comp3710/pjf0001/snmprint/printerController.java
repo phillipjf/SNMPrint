@@ -3,6 +3,7 @@ package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -29,20 +30,29 @@ public class printerController extends ActionBarActivity {
         actionBar.setDisplayUseLogoEnabled(true);
 
 
-
         final EditText nameText = (EditText)findViewById(R.id.printerName);
         final EditText ipText = (EditText)findViewById(R.id.ipAddr);
         final ListView list = (ListView)findViewById(R.id.printerList);
-        updateList(list);
+        //updateList(list);
 
+        //ListView lv1=(ListView)findViewById(R.id.listView1);
+        Printer data[] = new Printer[]
+                {
+                        new Printer("Heading 1", "Subheading 1"),
+                        new Printer("Heading 2", "Subheading 2"),
+                        new Printer("Heading 3", "Subheading 3")
+                };
+        LevelAdapter adp=new LevelAdapter(this, R.layout.list_item, data);
+        list.setAdapter(adp);
+        //
         addPrinter = (Button) findViewById(R.id.addPrinter);
         addPrinter.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 String pName = nameText.getText().toString();
                 String pIP = ipText.getText().toString();
                 Printer p = new Printer(pName, pIP);
-                db.addContact(p);
-                updateList(list);
+                db.addPrinter(p);
+                //updateList(list);
             }
         });
 
@@ -51,7 +61,7 @@ public class printerController extends ActionBarActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 db.deletePrinterbyID(id);
                 editItemAlert(id);
-                updateList(list);
+                //updateList(list);
             }
         });
     }
@@ -71,20 +81,22 @@ public class printerController extends ActionBarActivity {
                 Toast.makeText(getApplicationContext(), "Delete This Printer", Toast.LENGTH_LONG).show();
             }});
 
-        cd.setPositiveButton("OK", new DialogInterface.OnClickListener(){
+        cd.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
                 // Update the printer item based off input
 
-            }});
+            }
+        });
 
-        cd.setNegativeButton("Cancel", new DialogInterface.OnClickListener(){
+        cd.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
                 // Do nothing
 
 
-            }});
+            }
+        });
 
         cd.setView(view);
         cd.show();
@@ -92,6 +104,7 @@ public class printerController extends ActionBarActivity {
 
     public void updateList(ListView list){
         ArrayAdapter<Printer> mArrayAdapter = new ArrayAdapter<Printer>(this, android.R.layout.simple_list_item_1, android.R.id.text1, db.getAllPrinters());
+
         list.setAdapter(mArrayAdapter);
     }
 
