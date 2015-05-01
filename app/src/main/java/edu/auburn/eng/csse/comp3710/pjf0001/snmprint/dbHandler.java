@@ -35,7 +35,7 @@ public class dbHandler extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_PRINTERS_TABLE = "CREATE TABLE " + TABLE_PRINTERS + "("
-                + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
+                + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_NAME + " TEXT,"
                 + KEY_IP + " TEXT" + ")";
         db.execSQL(CREATE_PRINTERS_TABLE);
     }
@@ -55,8 +55,8 @@ public class dbHandler extends SQLiteOpenHelper{
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(KEY_NAME, p.mName); // Contact Name
-        values.put(KEY_IP, p.mIpAddr); // Contact Phone Number
+        values.put(KEY_NAME, p.mName); // Printer Name
+        values.put(KEY_IP, p.mIpAddr); // Printer IP
 
         // Inserting Row
         db.insert(TABLE_PRINTERS, null, values);
@@ -65,7 +65,7 @@ public class dbHandler extends SQLiteOpenHelper{
     }
 
     // Getting single printer
-    public Printer getContact(int id) {
+    public Printer getPrinter(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_PRINTERS, new String[] { KEY_ID,
@@ -118,10 +118,16 @@ public class dbHandler extends SQLiteOpenHelper{
     }
 
     // Deleting single printer
-    public void deleteContact(Printer p) {
+    public void deletePrinter(Printer p) {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TABLE_PRINTERS, KEY_ID + " = ?",
-                new String[] { String.valueOf(p.mPrinterID) });
+        db.delete(TABLE_PRINTERS, KEY_ID + " = ?", new String[] { String.valueOf(p.mPrinterID) });
+        db.close();
+    }
+
+    // Deleting single printer
+    public void deletePrinterbyID(long id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_PRINTERS, KEY_ID + " = ?", new String[] { String.valueOf(id) });
         db.close();
     }
 }

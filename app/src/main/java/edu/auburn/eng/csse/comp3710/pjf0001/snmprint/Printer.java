@@ -12,7 +12,7 @@ public class Printer {
     }
     @Override
     public String toString() {
-        return mName;
+        return "ID: " + mPrinterID + " | NAME: " + mName + " | IP: 131.204.116." + mIpAddr;
     }
 
 }

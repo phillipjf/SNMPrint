@@ -49,17 +49,13 @@ public class printerController extends ActionBarActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                /*
-                AlertDialog.Builder builder = new AlertDialog.Builder(printerController.this);
-                builder.setTitle("Dialog message here");
-                builder.setMessage("Dialog message here");
-                builder.create().show();
-                */
-                editItemAlert();
+                db.deletePrinterbyID(id);
+                editItemAlert(id);
+                updateList(list);
             }
         });
     }
-    void editItemAlert(){
+    void editItemAlert(final long id){
         AlertDialog.Builder cd = new AlertDialog.Builder(printerController.this);
         cd.setTitle("Edit Printer");
 
@@ -71,6 +67,7 @@ public class printerController extends ActionBarActivity {
             @Override
             public void onClick(View arg0) {
                 //Delete the item from db
+                db.deletePrinterbyID(id);
                 Toast.makeText(getApplicationContext(), "Delete This Printer", Toast.LENGTH_LONG).show();
             }});
 
@@ -85,6 +82,7 @@ public class printerController extends ActionBarActivity {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
                 // Do nothing
+
 
             }});
 
