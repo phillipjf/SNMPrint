@@ -43,15 +43,15 @@ public class snmpServer extends Activity {
 
             str = snmpValue.toString();
             if (strOID == OID_BASE_LEVEL + OID_BLACK) {
-                printValues += ("BLACK" + str + "%\n");
+                printValues += ("BLACK: " + str + "%\n");
             } else if (strOID == OID_BASE_LEVEL + OID_YELLOW) {
-                printValues += ("Yellow" + str + "%\n");
+                printValues += ("YELLOW: " + str + "%\n");
             }
             if (strOID == OID_BASE_LEVEL + OID_CYAN) {
-                printValues += ("CYAN" + str + "%\n");
+                printValues += ("CYAN: " + str + "%\n");
             }
             if (strOID == OID_BASE_LEVEL + OID_MAGENTA) {
-                printValues += ("MAGENTA" + str + "%\n");
+                printValues += ("MAGENTA: " + str + "%\n");
             }
         } catch (Exception e) {
             System.out.println("Exception during SNMP operation: " + e + "\n");

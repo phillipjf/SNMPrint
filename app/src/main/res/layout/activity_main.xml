@@ -18,51 +18,20 @@
         android:weightSum="1">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="131.204.116."
-            android:id="@+id/ipTitle"
-            android:layout_gravity="left" />
-
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ipEnd"
-            android:layout_gravity="right" />
+            android:text="Printer Details:"
+            android:id="@+id/printDetailsTitle"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="name"
-            android:id="@+id/textView2"
-            android:layout_gravity="left" />
-
-        <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/printName"
-            android:layout_gravity="right" />
-
-        <TextView
-            android:layout_width="333dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/printDetails"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.58"
-            android:text="something" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SUBMIT"
-            android:id="@+id/submitButton"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:id="@+id/textUserSettings"
-            android:layout_width="match_parent"
-            android:layout_height="207dp"
-            tools:context=".MainActivity" />
+            android:text="Refresh to get printer status!"
+            android:padding="5dp" />
 
     </LinearLayout>
 </RelativeLayout>
