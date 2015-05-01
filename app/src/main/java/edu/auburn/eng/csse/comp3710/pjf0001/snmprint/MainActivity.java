@@ -28,6 +28,7 @@ public class MainActivity extends ActionBarActivity {
     snmpServer prntStat = new snmpServer();
     AsyncTask theTask = new printTask();
 
+
     private static final int RESULT_SETTINGS = 1;
 
     @Override
@@ -81,7 +82,6 @@ public class MainActivity extends ActionBarActivity {
     private void refreshStatus(){
 
     }
-
 
     /*
     private void showUserSettings() {

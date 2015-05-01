@@ -1311,7 +1311,7 @@ containing a value of this type.
         public static final int splash=0x7f020038;
     }
     public static final class id {
-        public static final int action_add_printer=0x7f0a004e;
+        public static final int action_add_printer=0x7f0a0050;
         public static final int action_bar=0x7f0a0031;
         public static final int action_bar_activity_content=0x7f0a0000;
         public static final int action_bar_container=0x7f0a0030;
@@ -1325,7 +1325,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_refresh=0x7f0a004f;
+        public static final int action_refresh=0x7f0a0051;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int addPrinter=0x7f0a004d;
         public static final int always=0x7f0a0016;
@@ -1345,6 +1345,7 @@ containing a value of this type.
         public static final int home=0x7f0a0004;
         public static final int homeAsUp=0x7f0a000d;
         public static final int icon=0x7f0a0026;
+        public static final int idButton=0x7f0a004f;
         public static final int ifRoom=0x7f0a0018;
         public static final int image=0x7f0a0023;
         public static final int imgLogo=0x7f0a0047;
@@ -1355,13 +1356,14 @@ containing a value of this type.
         public static final int listMode=0x7f0a0009;
         public static final int list_item=0x7f0a0025;
         public static final int mainIP=0x7f0a004b;
-        public static final int menu_settings=0x7f0a0050;
+        public static final int menu_settings=0x7f0a0052;
         public static final int middle=0x7f0a0015;
         public static final int never=0x7f0a0019;
         public static final int none=0x7f0a000e;
         public static final int normal=0x7f0a000a;
         public static final int printDetails=0x7f0a0044;
         public static final int printName=0x7f0a0043;
+        public static final int printerList=0x7f0a004e;
         public static final int printerName=0x7f0a0049;
         public static final int printerNameTitle=0x7f0a0048;
         public static final int progress_circular=0x7f0a0005;
@@ -1427,7 +1429,8 @@ containing a value of this type.
         public static final int activity_splash=0x7f03001b;
         public static final int activity_splash2=0x7f03001c;
         public static final int addprinter=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int edit_item_alert=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class menu {
         public static final int addprinter=0x7f0e0000;
