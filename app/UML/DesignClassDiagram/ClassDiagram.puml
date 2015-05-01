@@ -8,12 +8,15 @@ class MainActivity
 class PrinterController
 class snmpServer
 class Printer
+class dbHandler
+class SQLiteOpenHelper
 
 Activity <|-- ActionBarActivity
 MainActivity --|> ActionBarActivity
 SplashScreen ---|> Activity
 PrinterController ---|> Activity
 snmpServer ---|> Activity
+dbHandler --|> SQLiteOpenHelper
 
 SplashScreen : #onCreate(savedInstanceState : Bundle) : void
 
@@ -36,9 +39,20 @@ snmpServer : +snmpGet(strIPAddress : String, community : String, iSNMPVersion : 
 Printer : -ipAddr : String
 Printer : -name : String
 
+dbHandler : + dbHandler(context : context) : dbHandler
+dbHandler : + onCreate(db : SQLiteDatabase) : void
+dbHandler : + onUpgrade(db : SQLiteDatabase, oldVersion : int, newVersion : int) : void
+dbHandler : + addContact(p : Printer) : void
+dbHandler : + getPrinter(id : int) : Printer
+dbHandler : + getAllPrinters() : List<Printer>
+dbHandler : + updatePrinter(p : Printer) : int
+dbHandler : + deletePrinter(p : Printer) : void
+dbHandler : + deletePrinterID(id : long) : void
+
 MainActivity "1" -- "1" PrinterController : launches >
 MainActivity "1" - "1" snmpServer : calls >
 
 PrinterController "1" -- "1" Printer : adds >
+PrinterController"1" *--- "1"dbHandler : contains >
 
 @enduml

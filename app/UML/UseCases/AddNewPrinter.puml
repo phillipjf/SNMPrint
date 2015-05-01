@@ -1,9 +1,0 @@
-@startuml
-title AddNewPrinter
-actor User
-
-rectangle {
-User -- (Menu)
-(Menu) .> (Add Printer) : includes
-}
-@enduml

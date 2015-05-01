@@ -1,9 +1,0 @@
-@startuml
-title ViewPrinter
-actor User
-
-rectangle {
-User -- (Menu)
-(Menu) .> (Show Printers) : selects
-}
-@enduml
