@@ -9,35 +9,28 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Printer Details:"
-            android:id="@+id/printDetailsTitle"
-            android:layout_gravity="center_horizontal"
-            android:textSize="25dp" />
-
-        <LinearLayout
-            android:id="@+id/detailChart"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:layout_marginTop="50dp"
-            android:orientation="vertical">
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/printDetails"
-            android:layout_gravity="center_horizontal"
-            android:text="Refresh to get printer status!"
-            android:padding="5dp" />
-    <View
-        android:id="@+id/view"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:layout_alignParentBottom="true"
-        android:background="#00FF00" />
+        android:layout_height="wrap_content"
+        android:text="Printer Details:"
+        android:id="@+id/printDetailsTitle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/refreshAlert"
+        android:layout_gravity="center_horizontal"
+        android:text="Refresh to get printer status!"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:id="@+id/printDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/refreshAlert"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+    </LinearLayout>
 </LinearLayout>

@@ -28,10 +28,7 @@ public class MainActivity extends ActionBarActivity {
     public static final String OID_CYAN = "1.3";
     public static final String OID_MAGENTA = "1.4";
 
-    TextView outputText;
-
     snmpServer prntStat = new snmpServer();
-
     final dbHandler db = new dbHandler(this);
 
     private static final int RESULT_SETTINGS = 1;
@@ -42,8 +39,6 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayUseLogoEnabled(true);
-
-        outputText = (TextView) findViewById(R.id.printDetails);
     }
 
     @Override
@@ -105,71 +100,82 @@ public class MainActivity extends ActionBarActivity {
     }
     */
 
-    public void drawChart(int count, int color, int height) {
-        LinearLayout linearChart = (LinearLayout)findViewById(R.id.detailChart);
-        System.out.println(count + color + height);
-        if (color == 0) {
-            color = Color.BLACK;
-        } else if (color == 1) {
-            color = Color.CYAN;
-        } else if (color == 2) {
-            color = Color.YELLOW;
-        } else if (color == 3) {
-            color = Color.MAGENTA;
-        } else if (color == 4) {
-            color = Color.WHITE;
+    public void drawChart(int color, int height) {
+        LinearLayout linearChart = (LinearLayout)findViewById(R.id.printDetails);
+        System.out.println("Color: "+ color+ " " + "Height: " + height);
+        switch (color){
+            case 0:
+                color = Color.BLACK;
+                break;
+            case 1:
+                color = Color.CYAN;
+                break;
+            case 2:
+                color = Color.MAGENTA;
+                break;
+            case 3:
+                color = Color.YELLOW;
+                break;
+            case 4:
+                color = Color.TRANSPARENT;
+                break;
         }
-        for (int k = 1; k <= count; k++) {
-            View aview = new View(MainActivity.this);
-            aview.setBackgroundColor(color);
-            aview.setLayoutParams(new LinearLayout.LayoutParams(height, 50));
-            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) aview.getLayoutParams();
-            params.setMargins(3, 0, 0, 0); // substitute parameters for left, top, right, bottom
-            aview.setLayoutParams(params);
-            linearChart.addView(aview);
-        }
+        if(height<=0){color=Color.RED;height = 100;}
+
+        View view = new View(MainActivity.this);
+        view.setBackgroundColor(color);
+        view.setLayoutParams(new LinearLayout.LayoutParams(height, 50));
+        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) view.getLayoutParams();
+        params.setMargins(3, 2, 2, 2); // substitute parameters for left, top, right, bottom
+        view.setLayoutParams(params);
+        linearChart.addView(view);
     }
 
     private class printTask extends AsyncTask<String, Void, String> {
         private final ProgressDialog pdialog = new ProgressDialog(MainActivity.this);
-        int[] values = new int[4];
+        LinearLayout linearChart = (LinearLayout)findViewById(R.id.printDetails);
+        TextView title;
+        ArrayList<Printer> pList = db.getAllPrinters();
+        Printer p;
+
         @Override
         protected void onPreExecute() {
             this.pdialog.setMessage("Getting Printer Status...");
             this.pdialog.show();
+            linearChart.removeAllViews();
         }
         @Override
         protected String doInBackground(String... params) {
-            ArrayList<Printer> pList = db.getAllPrinters();
-            Printer p;
             String returnVal="";
+
             for(int i=0; i<pList.size();i++) {
                 p = pList.get(i);
                 String useIP = p.getIP();
-                String name = p.getPrinterName();
-                //returnVal += "\n" + name + "\n";
-                //returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_BLACK);
-                //returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN);
-                //returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA);
-                //returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW);
-                values[0] = prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_BLACK);
-                values[1] = prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN);
-                values[2] = prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA);
-                values[3] = prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW);
+                returnVal = p.getPrinterName();
+                p.setkVal(prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_BLACK));
+                p.setcVal(prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN));
+                p.setmVal(prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA));
+                p.setyVal(prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW));
+
             }
             return returnVal;
         }
         @Override
         protected void onPostExecute(String str) {
-           if (this.pdialog.isShowing()) {
-               this.pdialog.dismiss();
-           }
-            //outputText.setText(str);
-
-            for(int i=0; i<4; i++){
-                drawChart(1, i, values[i]);
+            if (this.pdialog.isShowing()) {
+                this.pdialog.dismiss();
             }
-            drawChart(1, 4, 0);
+            for(int i=0; i<pList.size(); i++) {
+                p = pList.get(i);
+                title = new TextView(MainActivity.this);
+                title.setText(p.getPrinterName().toString());
+                linearChart.addView(title);
+                drawChart(0, p.getkVal() * 10);
+                drawChart(1, p.getcVal() * 10);
+                drawChart(2, p.getmVal() * 10);
+                drawChart(3, p.getyVal() * 10);
+                drawChart(4, 1);
+            }
         }
     }
 }
