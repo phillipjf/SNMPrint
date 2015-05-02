@@ -1,6 +1,7 @@
 package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
 import android.app.ProgressDialog;
+import android.graphics.Color;
 import android.support.v7.app.ActionBar;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -27,6 +29,7 @@ public class MainActivity extends ActionBarActivity {
     public static final String OID_MAGENTA = "1.4";
 
     TextView outputText;
+
     snmpServer prntStat = new snmpServer();
 
     final dbHandler db = new dbHandler(this);
@@ -66,7 +69,6 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -103,8 +105,34 @@ public class MainActivity extends ActionBarActivity {
     }
     */
 
+    public void drawChart(int count, int color, int height) {
+        LinearLayout linearChart = (LinearLayout)findViewById(R.id.detailChart);
+        System.out.println(count + color + height);
+        if (color == 0) {
+            color = Color.BLACK;
+        } else if (color == 1) {
+            color = Color.CYAN;
+        } else if (color == 2) {
+            color = Color.YELLOW;
+        } else if (color == 3) {
+            color = Color.MAGENTA;
+        } else if (color == 4) {
+            color = Color.WHITE;
+        }
+        for (int k = 1; k <= count; k++) {
+            View aview = new View(MainActivity.this);
+            aview.setBackgroundColor(color);
+            aview.setLayoutParams(new LinearLayout.LayoutParams(height, 50));
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) aview.getLayoutParams();
+            params.setMargins(3, 0, 0, 0); // substitute parameters for left, top, right, bottom
+            aview.setLayoutParams(params);
+            linearChart.addView(aview);
+        }
+    }
+
     private class printTask extends AsyncTask<String, Void, String> {
         private final ProgressDialog pdialog = new ProgressDialog(MainActivity.this);
+        int[] values = new int[4];
         @Override
         protected void onPreExecute() {
             this.pdialog.setMessage("Getting Printer Status...");
@@ -119,11 +147,15 @@ public class MainActivity extends ActionBarActivity {
                 p = pList.get(i);
                 String useIP = p.getIP();
                 String name = p.getPrinterName();
-                returnVal += "\n" + name + "\n";
-                returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_BLACK);
-                returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN);
-                returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA);
-                returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW);
+                //returnVal += "\n" + name + "\n";
+                //returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_BLACK);
+                //returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN);
+                //returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA);
+                //returnVal += prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW);
+                values[0] = prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_BLACK);
+                values[1] = prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN);
+                values[2] = prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA);
+                values[3] = prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW);
             }
             return returnVal;
         }
@@ -132,7 +164,12 @@ public class MainActivity extends ActionBarActivity {
            if (this.pdialog.isShowing()) {
                this.pdialog.dismiss();
            }
-            outputText.setText(str);
+            //outputText.setText(str);
+
+            for(int i=0; i<4; i++){
+                drawChart(1, i, values[i]);
+            }
+            drawChart(1, 4, 0);
         }
     }
 }

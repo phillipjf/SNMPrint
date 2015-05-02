@@ -21,9 +21,10 @@ public class snmpServer extends Activity {
      * This method process the request and Get the Value on the device
      * @returns String. community=READ_COMMUNITY
      */
-    public String getPrintStatus(String strIPAddress, String community, int iSNMPVersion, String strOID) {
-        String str = "";
-        String printValues = new String();
+    public int getPrintStatus(String strIPAddress, String community, int iSNMPVersion, String strOID) {
+        //String str = "";
+        int str = -1;
+        //int printValues = -1;
         try {
             InetAddress hostAddress = InetAddress.getByName(strIPAddress);
 
@@ -41,22 +42,28 @@ public class snmpServer extends Activity {
             //extract the corresponding value from the pair; it's the second element in the sequence
             SNMPObject snmpValue = pair.getSNMPObjectAt(1);
 
-            str = snmpValue.toString();
+            str = Integer.valueOf(snmpValue.toString());
+            /*
+            int i=0;
             if (strOID == OID_BASE_LEVEL + OID_BLACK) {
-                printValues += ("BLACK: " + str + "%\n");
+                //printValues += ("BLACK: " + str + "%\n");
+                printValues = (str);
             } else if (strOID == OID_BASE_LEVEL + OID_YELLOW) {
-                printValues += ("YELLOW: " + str + "%\n");
+                //printValues += ("YELLOW: " + str + "%\n");
+                printValues = (str);
             }
             if (strOID == OID_BASE_LEVEL + OID_CYAN) {
-                printValues += ("CYAN: " + str + "%\n");
+                //printValues += ("CYAN: " + str + "%\n");
+                printValues = (str);
             }
             if (strOID == OID_BASE_LEVEL + OID_MAGENTA) {
-                printValues += ("MAGENTA: " + str + "%\n");
-            }
+                //printValues += ("MAGENTA: " + str + "%\n");
+                printValues = (str);
+            }*/
         } catch (Exception e) {
             System.out.println("Exception during SNMP operation: " + e + "\n");
         }
-        return printValues;
+        return str;
     }
 } 
 
