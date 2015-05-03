@@ -25,12 +25,17 @@
         android:text="Refresh to get printer status!"
         android:padding="5dp" />
 
-    <LinearLayout
-        android:id="@+id/printDetails"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/refreshAlert"
-        android:layout_marginTop="5dp"
-        android:orientation="vertical">
-    </LinearLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/printDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/refreshAlert"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

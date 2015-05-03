@@ -10,15 +10,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity{
     public static final String READ_COMMUNITY = "public";
     public static final int mSNMPVersion = 0; // 0 represents SNMP version=1
     public static final String BASE_IP = "131.204.116.";
@@ -27,11 +25,13 @@ public class MainActivity extends ActionBarActivity {
     public static final String OID_YELLOW = "1.2";
     public static final String OID_CYAN = "1.3";
     public static final String OID_MAGENTA = "1.4";
+    private static final int RESULT_SETTINGS = 1;
 
     snmpServer prntStat = new snmpServer();
     final dbHandler db = new dbHandler(this);
+    ArrayList<Printer> pList;
+    LinearLayout linearChart;
 
-    private static final int RESULT_SETTINGS = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,9 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayUseLogoEnabled(true);
+
+        pList = db.getAllPrinters();
+        linearChart = (LinearLayout)findViewById(R.id.printDetails);
     }
 
     @Override
@@ -101,7 +104,6 @@ public class MainActivity extends ActionBarActivity {
     */
 
     public void drawChart(int color, int height) {
-        LinearLayout linearChart = (LinearLayout)findViewById(R.id.printDetails);
         System.out.println("Color: "+ color+ " " + "Height: " + height);
         switch (color){
             case 0:
@@ -133,22 +135,19 @@ public class MainActivity extends ActionBarActivity {
 
     private class printTask extends AsyncTask<String, Void, String> {
         private final ProgressDialog pdialog = new ProgressDialog(MainActivity.this);
-        LinearLayout linearChart = (LinearLayout)findViewById(R.id.printDetails);
         TextView title;
-        ArrayList<Printer> pList = db.getAllPrinters();
         Printer p;
 
         @Override
         protected void onPreExecute() {
             this.pdialog.setMessage("Getting Printer Status...");
             this.pdialog.show();
-            linearChart.removeAllViews();
         }
         @Override
         protected String doInBackground(String... params) {
             String returnVal="";
 
-            for(int i=0; i<pList.size();i++) {
+            for(int i=0; i< pList.size();i++) {
                 p = pList.get(i);
                 String useIP = p.getIP();
                 returnVal = p.getPrinterName();
@@ -156,19 +155,21 @@ public class MainActivity extends ActionBarActivity {
                 p.setcVal(prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_CYAN));
                 p.setmVal(prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_MAGENTA));
                 p.setyVal(prntStat.getPrintStatus(BASE_IP + useIP, READ_COMMUNITY, mSNMPVersion, OID_BASE_LEVEL + OID_YELLOW));
+                db.updatePrinter(p);
 
             }
             return returnVal;
         }
         @Override
         protected void onPostExecute(String str) {
+            linearChart.removeAllViews();
             if (this.pdialog.isShowing()) {
                 this.pdialog.dismiss();
             }
             for(int i=0; i<pList.size(); i++) {
                 p = pList.get(i);
                 title = new TextView(MainActivity.this);
-                title.setText(p.getPrinterName().toString());
+                title.setText(p.getPrinterName());
                 linearChart.addView(title);
                 drawChart(0, p.getkVal() * 10);
                 drawChart(1, p.getcVal() * 10);
@@ -178,4 +179,24 @@ public class MainActivity extends ActionBarActivity {
             }
         }
     }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        Printer p;
+        TextView title;
+        for(int i=
+            0; i<pList.size(); i++) {
+            p = pList.get(i);
+            title = new TextView(MainActivity.this);
+            title.setText(p.getPrinterName());
+            linearChart.addView(title);
+            drawChart(0, p.getkVal() * 10);
+            drawChart(1, p.getcVal() * 10);
+            drawChart(2, p.getmVal() * 10);
+            drawChart(3, p.getyVal() * 10);
+            drawChart(4, 1);
+        }
+    }
+
 }

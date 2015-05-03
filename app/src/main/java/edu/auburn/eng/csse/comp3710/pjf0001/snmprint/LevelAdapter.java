@@ -7,7 +7,6 @@ package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
     import android.view.ViewGroup;
     import android.widget.ArrayAdapter;
     import android.widget.TextView;
-
     import java.util.ArrayList;
 
 public class LevelAdapter extends ArrayAdapter<Printer> {
