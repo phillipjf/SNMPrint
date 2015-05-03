@@ -2,15 +2,12 @@ package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -63,7 +60,7 @@ public class printerController extends ActionBarActivity {
         });
     }
 
-    void editItemAlert(final int position){
+    public void editItemAlert(final int position){
         AlertDialog.Builder cd = new AlertDialog.Builder(printerController.this);
 
         LayoutInflater layoutInflater = (LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -125,7 +122,7 @@ public class printerController extends ActionBarActivity {
     }
 
     public void updateList(ListView list){
-        LevelAdapter adp=new LevelAdapter(this, R.layout.list_item, db.getAllPrinters());
+        LevelAdapter adp = new LevelAdapter(this, R.layout.list_item, db.getAllPrinters());
         list.setAdapter(adp);
     }
 

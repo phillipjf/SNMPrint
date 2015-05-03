@@ -3,11 +3,12 @@ package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 public class Printer {
     String mName = "";
     String mIpAddr = "";
-    int kVal = 0;
-    int cVal = 0;
-    int mVal = 0;
-    int yVal = 0;
     long mPrinterID = -1;
+
+    int cVal = -1;
+    int mVal = -1;
+    int yVal = -1;
+    int kVal = -1;
 
     /*********** Set Methods ******************/
 
@@ -74,9 +75,6 @@ public class Printer {
     public int getkVal() {
         return kVal;
     }
-    @Override
-    public String toString() {
-        return "ID: " + mPrinterID + " | NAME: " + mName + " | IP: 131.204.116." + mIpAddr;
-    }
+
 
 }
