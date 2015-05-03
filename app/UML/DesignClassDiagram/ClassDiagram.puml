@@ -10,13 +10,15 @@ class snmpServer
 class Printer
 class dbHandler
 class SQLiteOpenHelper
+class LevelAdapter
 
-Activity <|-- ActionBarActivity
+Activity <|- ActionBarActivity
 MainActivity --|> ActionBarActivity
 SplashScreen ---|> Activity
 PrinterController ---|> Activity
 snmpServer ---|> Activity
 dbHandler --|> SQLiteOpenHelper
+LevelAdapter --|> ArrayAdapter
 
 SplashScreen : #onCreate(savedInstanceState : Bundle) : void
 
@@ -54,5 +56,6 @@ MainActivity "1" - "1" snmpServer : calls >
 
 PrinterController "1" -- "1" Printer : adds >
 PrinterController"1" *--- "1"dbHandler : contains >
+PrinterController"1" *- "1"LevelAdapter : contains >
 
 @enduml

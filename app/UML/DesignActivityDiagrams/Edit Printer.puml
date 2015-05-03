@@ -1,0 +1,30 @@
+@startuml
+title Edit Printer Activity
+(*)  --> "Select to edit Printers"
+If "Choose type of editing" then
+--> [Add Printer] "Input printer name"
+--> "Input Printer ip address"
+--> submit add request
+--> "Update Database"
+else
+If "Remove by name" then
+--> [Yes]"Input Printer name"
+--> "Submit remove request"
+else
+-->[No] "Input Printer IP address"
+-->"Submit remove request"
+Endif
+--> "Update Database"
+else
+if "Edit by name" then
+--> [Yes] "Input Printer name to edit"
+--> "Edit Printer info"
+else
+-->[No] "Input Printer IP address to edit"
+--> "Edit Printer info"
+Endif
+--> "Submit update request"
+--> "Update Database"
+Endif
+-->(*)
+@enduml

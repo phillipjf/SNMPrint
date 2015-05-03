@@ -1,0 +1,7 @@
+@startuml
+(*)  --> "Request to view Printer Status"
+--> Retrieve Printers from database
+--> Updates status for each Printer
+-->Displays status to screen
+-->(*)
+@enduml
