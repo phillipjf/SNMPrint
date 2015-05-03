@@ -1,4 +1,4 @@
-package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
+package edu.auburn.eng.csse.comp3710.Team1.snmprint;
 
 public class Printer {
     String mName = "";
