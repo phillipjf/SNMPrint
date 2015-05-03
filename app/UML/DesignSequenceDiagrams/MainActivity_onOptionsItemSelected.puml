@@ -1,0 +1,12 @@
+@startuml
+title MainActivity_onOptionsItemSelected
+-> MainActivity: onOptionsItemSelected(item : MenuItem)
+MainActivity -> Android : item.getItemId()
+alt R.id.actionRefresh
+MainActivity -> printTask :new printTask().execute()
+else R.id.action_add_printer
+MainActivity -> Intent : j = new Intent(this, printerController.class)
+MainActivity -> Intent : startActivityForResult(j, Result_Settings)
+end
+<- MainActivity : return true
+@enduml

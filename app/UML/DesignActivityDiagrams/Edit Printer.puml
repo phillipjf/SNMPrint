@@ -7,13 +7,8 @@ If "Choose type of editing" then
 --> submit add request
 --> "Update Database"
 else
-If "Remove by name" then
---> [Yes]"Input Printer name"
+--> "Select Printer to remove"
 --> "Submit remove request"
-else
--->[No] "Input Printer IP address"
--->"Submit remove request"
-Endif
 --> "Update Database"
 else
 if "Edit by name" then

@@ -1,0 +1,102 @@
+@startsalt
+{
+{T
++ Charm Snake
+++  Goal
++++ To direct the snake around the snake pit
+++ Entry conditions
++++ The snake charmer releases the snake
+++ Scenario
++++ The snake starts moving in a random direction.
++++ The direction in which the snake moves is controlled by the Snake Charmer (sub-use).
++++ When the snake eats an apple,
+++++ the apple count is incremented by one,
+++++ the snake increases speed, and
+++++ the snake grows longer
++++ The snake dies when it
+++++ hits a wall, or
+++++ bites itself
+++ Exceptions
++++ The game is terminated before it concludes
+++ Exit conditions
++++ Successful Exit Conditions
+++++ The game is completed
+++++ The score is available
++++ Failure Exit Conditions
+++++ No score is available
+}
+---
+{T
++ Beguile Snake
+++  Goal
++++ To change the direction of the snake
+++ Entry conditions
++++ The Snake Charmer instructs the snake to turn left or right
+++ Scenario
++++ The snake turns left or right relative to the direction in which it is moving.
+++ Exceptions
++++ None
+++ Exit conditions
++++ Successful Exit Conditions
+++++ The snake turns in the directed direction.
++++ Failure Exit Conditions
+++++ None
+}
+---
+{T
++ View Snake Pit
+++  Goal
++++ To depict the snake, wall, and apples
+++ Entry conditions
++++ The snake is moving.
+++ Scenario
++++ The Snake Charmer is shown the snake pit, consisting of
+++++ walls
+++++ two apples
+++++ snake
+++ Exceptions
++++ None
+++ Exit conditions
++++ Successful Exit Conditions
+++++ The game has concluded
++++ Failure Exit Conditions
+++++ None
+}
+---
+{T
++ View Count of Eaten Apples
+++  Goal
++++ to indicate how many apples the snake has eaten
+++ Entry conditions
++++ The snake eats an apple
+++ Scenario
++++ The number of apples eaten by the snake is shown to the Snake Charmer.
++++ Initially, the number of apples eaten is zero.
+++ Exceptions
++++ None
+++ Exit conditions
++++ Successful Exit Conditions
+++++ The score is updated to refect the number of apples eaten.
++++ Failure Exit Conditions
+++++ None
+}
+---
+{T
++ Publish Count of Eaten Apples
+++  Goal
++++ To send the Snake Charmer's score to a central repository of scores.
+++ Entry conditions
++++ The snake has died
+++ Scenario
++++ The number of apples eaten is sent to the HISSS.
+++ Exceptions
++++ Communication with the HISSS is not possible.
+++ Exit conditions
++++ Successful Exit Conditions
+++++ The score is successfully sent to HISSS.
++++ Failure Exit Conditions
+++++ No score is published
+}
+
+}
+@endsalt

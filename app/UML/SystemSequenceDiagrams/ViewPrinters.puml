@@ -1,7 +1,0 @@
-@startuml
-title View Printers System Sequence Diagram
-Actor User
-User -> MainActivity : onCreate
-User -> MainActivity : requests view
-User <-- MainActivity : displays printers
-@enduml

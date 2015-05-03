@@ -1,0 +1,21 @@
+@startuml
+title printerController_onCreate
+-> printerController : onCreate(savedInstanceState : Bundle)
+printerController -> ActionBarActivity : onCreate(savedInstanceState)
+printerController -> ActionBar : actionBar.setDisplayHomeAsUpEnabled(true)
+printerController -> ActionBar : actionBar.setDisplayUseLogoEnabled(true)
+printerController -> printerController : updateList(list : ListView)
+printerController -> Button : setOnClickListener
+Button -> EditText : pName = nameText.getText().toString()
+Button -> EditText : pIP = ipText.getText().toString()
+Button -> Printer : p = new Printer()
+Button -> Printer : setPrinterName(pName)
+Button -> Printer : setIp(pIP)
+Button -> EditText : nameText.setText("")
+Button -> EditText : ipText.setText("")
+Button -> dbHandler : db.addPrinter(p)
+Button -> printerController : updateList(list)
+printerController -> ListView : setItemOnClickListener((parent, view, position, id))
+ListView -> printerController : editItemAlert(position)
+ListView -> printerController : updateList(list)
+@enduml

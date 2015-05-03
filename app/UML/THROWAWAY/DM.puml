@@ -1,0 +1,38 @@
+@startuml
+
+Title Connecting Things Together
+class SnakeCharmer {
+applesEaten
+}
+class HISSS{
+}
+class Snake {
+speed
+direction
+length
+location
+}
+class SnakePit {
+}
+class Apple {
+location
+}
+class Wall {
+}
+
+
+SnakePit "1" *-- "2" Apple: contains >
+SnakePit "1" *-- "1" Snake: contains >
+SnakePit "1" *-- "4" Wall : bounded by >
+
+SnakeCharmer - HISSS: publishes apple count >
+
+SnakeCharmer -- Snake: charms >
+SnakeCharmer -- SnakePit: views >
+
+
+
+hide empty members
+hide methods
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+title Use Case Diagram
+
+actor SnakeCharmer
+actor HISSS
+
+rectangle  {
+usecase "publish count of\neaten apples" as UC3
+usecase "charm snake" as UC2
+usecase "view count of \neaten apples" as UC1
+SnakeCharmer -- UC2
+SnakeCharmer -- UC1
+
+UC2 ..> (beguile): <<includes>>
+UC2 ..> (view snake pit): <<includes>>
+
+HISSS -- UC3
+
+
+}
+@enduml
+

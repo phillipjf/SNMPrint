@@ -1,9 +1,0 @@
-@startuml
-title Update Printer Status System Sequence Diagram
-actor User
-User -> MainActivity : onCreate
-User -> MainActivity : onClick
-actor SNMP
-MainActivity -> SNMP : requests update
-SNMP --> MainActivity : returns update
-@enduml

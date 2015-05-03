@@ -1,0 +1,29 @@
+@startuml
+title MainActivity_drawChart
+-> MainActivity : drawChart(color : int, height : int)
+MainActivity -> LinearLayout : linearChart = findViewById(R.id.printDetails)
+alt color = 0
+MainActivity -> MainActivity : color = Color.BLACK
+else color = 1
+MainActivity -> MainActivity : color = Color.CYAN
+else color = 2
+MainActivity -> MainActivity : color = Color.MAGENTA
+else color = 3
+MainActivity -> MainActivity : color = Color.YELLOW
+else color = 4
+MainActivity -> MainActivity : color = Color.TRANSPARENT
+end
+alt height <= 0
+MainActivity -> MainActivity : color = Color.RED
+MainActivity -> MainActivity : height = 100
+end
+MainActivity -> View : view = new View(MainActivity.this)
+MainActivity -> View : view.setBackgroundColor(color)
+MainActivity -> View : view.setLayoutParams(new LinearLayout.LayoutParams(height, 50))
+MainActivity -> View : view.getLayoutParams()
+View --> LinearLayout : LinearLayout.LayoutParams params
+MainActivity -> LinearLayout : params.setMargins(3,2,2,2)
+MainActivity -> View : view.setLayoutParams(params)
+MainActivity -> LinearLayout : linearChart.addView(view)
+<- MainActivity : return void
+@enduml

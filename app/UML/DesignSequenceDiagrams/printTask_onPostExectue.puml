@@ -1,0 +1,19 @@
+@startuml
+title printTask_onPostExectute
+-> printTask : onPostExecute(str : String)
+opt this.pdialog.isShowing()
+printTask -> ProgressDialog : dismiss()
+end
+loop int i < pList.size()
+printTask -> ArrayList : Printer p = pList.get(i)
+printTask -> TextView : TextView title = new TextView(MainActivity.this)
+printTask -> TextView : title.setText(p.getPrinterName())
+printTask -> LinearLayout : linearChart.addView(title)
+printTask -> MainActivity : drawChart(0, p.getkVal() * 10)
+printTask -> MainActivity : drawChart(1, p.getcVal() * 10)
+printTask -> MainActivity : drawChart(2, p.getmVal() * 10)
+printTask -> MainActivity : drawChart(3, p.getyVal() * 10)
+printTask -> MainActivity : drawChart(4, 1)
+end
+<- printTask : return void
+@enduml
