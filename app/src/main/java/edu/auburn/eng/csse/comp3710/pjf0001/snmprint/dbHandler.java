@@ -95,9 +95,7 @@ public class dbHandler extends SQLiteOpenHelper{
                 p.setID(cursor.getLong(0));
                 p.setPrinterName(cursor.getString(1));
                 p.setIP(cursor.getString(2));
-                //contact.setID(cursor.getString(0));
-                //contact.setName(cursor.getString(1));
-                //contact.setPhoneNumber(cursor.getString(2));
+
                 // Adding printer to list
                 printerList.add(p);
             } while (cursor.moveToNext());
@@ -115,8 +113,7 @@ public class dbHandler extends SQLiteOpenHelper{
         values.put(KEY_IP, p.mIpAddr);
 
         // updating row
-        return db.update(TABLE_PRINTERS, values, KEY_ID + " = ?",
-                new String[] {String.valueOf(p.mPrinterID)});
+        return db.update(TABLE_PRINTERS, values, KEY_ID + " = ?", new String[] {String.valueOf(p.mPrinterID)});
     }
 
     // Deleting single printer

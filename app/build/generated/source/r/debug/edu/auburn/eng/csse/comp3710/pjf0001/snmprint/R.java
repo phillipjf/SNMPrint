@@ -1311,7 +1311,7 @@ containing a value of this type.
         public static final int splash=0x7f020038;
     }
     public static final class id {
-        public static final int action_add_printer=0x7f0a005a;
+        public static final int action_add_printer=0x7f0a005b;
         public static final int action_bar=0x7f0a0031;
         public static final int action_bar_activity_content=0x7f0a0000;
         public static final int action_bar_container=0x7f0a0030;
@@ -1325,20 +1325,21 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_refresh=0x7f0a005b;
+        public static final int action_refresh=0x7f0a005c;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int addPrinter=0x7f0a004f;
-        public static final int alertPrinterName=0x7f0a0051;
-        public static final int alertipAddr=0x7f0a0053;
+        public static final int alertID=0x7f0a0051;
+        public static final int alertPrinterName=0x7f0a0052;
+        public static final int alertipAddr=0x7f0a0054;
         public static final int always=0x7f0a0016;
         public static final int beginning=0x7f0a0013;
-        public static final int cancelButton=0x7f0a0055;
+        public static final int cancelButton=0x7f0a0056;
         public static final int checkbox=0x7f0a0029;
         public static final int collapseActionView=0x7f0a0017;
         public static final int container=0x7f0a003f;
         public static final int decor_content_parent=0x7f0a002f;
         public static final int default_activity_button=0x7f0a0024;
-        public static final int deleteButton=0x7f0a0054;
+        public static final int deleteButton=0x7f0a0055;
         public static final int dialog=0x7f0a001b;
         public static final int disableHome=0x7f0a000c;
         public static final int dropdown=0x7f0a001c;
@@ -1359,12 +1360,12 @@ containing a value of this type.
         public static final int listMode=0x7f0a0009;
         public static final int list_item=0x7f0a0025;
         public static final int mainIP=0x7f0a004d;
-        public static final int menu_settings=0x7f0a005c;
+        public static final int menu_settings=0x7f0a005d;
         public static final int middle=0x7f0a0015;
         public static final int never=0x7f0a0019;
         public static final int none=0x7f0a000e;
         public static final int normal=0x7f0a000a;
-        public static final int okButton=0x7f0a0056;
+        public static final int okButton=0x7f0a0057;
         public static final int printDetails=0x7f0a0042;
         public static final int printDetailsTitle=0x7f0a0040;
         public static final int printName=0x7f0a0046;
@@ -1396,10 +1397,10 @@ containing a value of this type.
         public static final int textUserSettings=0x7f0a0048;
         public static final int textView2=0x7f0a0045;
         public static final int title=0x7f0a0027;
-        public static final int titleMainIP=0x7f0a0052;
-        public static final int txtID=0x7f0a0057;
-        public static final int txtIP=0x7f0a0059;
-        public static final int txtName=0x7f0a0058;
+        public static final int titleMainIP=0x7f0a0053;
+        public static final int txtID=0x7f0a0058;
+        public static final int txtIP=0x7f0a005a;
+        public static final int txtName=0x7f0a0059;
         public static final int up=0x7f0a0008;
         public static final int useLogo=0x7f0a0012;
         public static final int withText=0x7f0a001a;

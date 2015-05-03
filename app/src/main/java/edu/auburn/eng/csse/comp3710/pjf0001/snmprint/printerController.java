@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -61,6 +62,7 @@ public class printerController extends ActionBarActivity {
             }
         });
     }
+
     void editItemAlert(final int position){
         AlertDialog.Builder cd = new AlertDialog.Builder(printerController.this);
 
@@ -77,8 +79,10 @@ public class printerController extends ActionBarActivity {
 
         final EditText printerName = (EditText)view.findViewById(R.id.alertPrinterName);
         final EditText printerIP = (EditText)view.findViewById(R.id.alertipAddr);
+        final TextView printerID = (TextView)view.findViewById(R.id.alertID);
         printerName.setText(p.getPrinterName());
         printerIP.setText(p.getIP());
+        printerID.setText(String.valueOf(p.getID()));
 
         Button btnDelete = (Button)view.findViewById(R.id.deleteButton);
         Button btnOkay = (Button)view.findViewById(R.id.okButton);
@@ -101,6 +105,8 @@ public class printerController extends ActionBarActivity {
                 //update the item
                 p.setPrinterName(printerName.getText().toString());
                 p.setIP(printerIP.getText().toString());
+                p.setID(Long.valueOf((printerID.getText().toString())).longValue());
+                db.updatePrinter(p);
                 updateList(list);
                 dialog.dismiss();
             }
