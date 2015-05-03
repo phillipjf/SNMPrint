@@ -198,5 +198,4 @@ public class MainActivity extends ActionBarActivity{
             drawChart(4, 1);
         }
     }
-
 }

@@ -1,13 +1,13 @@
 package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
 
-    import android.app.Activity;
-    import android.content.Context;
-    import android.view.LayoutInflater;
-    import android.view.View;
-    import android.view.ViewGroup;
-    import android.widget.ArrayAdapter;
-    import android.widget.TextView;
-    import java.util.ArrayList;
+import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+import java.util.ArrayList;
 
 public class LevelAdapter extends ArrayAdapter<Printer> {
 
@@ -29,7 +29,7 @@ public class LevelAdapter extends ArrayAdapter<Printer> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
-        PrinterHolder holder = null;
+        PrinterHolder holder;
 
         if(row == null){
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();

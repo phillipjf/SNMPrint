@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="131.204.116."
+            android:text="@string/GLOBAL_IP"
             android:id="@+id/mainIP"
             android:layout_gravity="bottom|left"
             android:gravity="fill" />

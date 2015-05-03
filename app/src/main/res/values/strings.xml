@@ -27,5 +27,6 @@
     <string name="ip_end_summary">176</string>
 
     <string name="addprinter">Add Printer</string>
+    <string name="GLOBAL_IP">131.204.116.</string>
     
 </resources>
