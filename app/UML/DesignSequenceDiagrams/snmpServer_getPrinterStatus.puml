@@ -1,0 +1,13 @@
+@startuml
+title snmpServer_getPrintStatus
+-> snmpServer : getPrintStatus(strIPAddress : String, community : String, iSNMPVersion : int, strOID : String) : int
+alt try
+snmpServer -> InetAddress : getByName(strIPAddress)
+snmpServer -> SNMPv1CommunicationInterface : comInterface = new SNMPv1CommunicationInterface(iSNMPVersion, hostAddress, community)
+snmpServer -> SNMPv1CommunicationInterface : comInterface.getMIBEntry(strOID)
+snmpServer -> SNMPVarBindList : newVars.getSNMPObjectAt(0)
+else catch Exception e
+snmpServer -> System : System.out.println(e)
+end
+
+@enduml
