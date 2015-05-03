@@ -72,37 +72,6 @@ public class MainActivity extends ActionBarActivity{
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /*
-    private void showUserSettings() {
-        SharedPreferences sharedPrefs = PreferenceManager
-                .getDefaultSharedPreferences(this);
-
-        StringBuilder builder = new StringBuilder();
-
-        builder.append("\n Username: "
-                + sharedPrefs.getString("prefUsername", "NULL"));
-
-        builder.append("\n Send report:"
-                + sharedPrefs.getBoolean("prefSendReport", false));
-
-        builder.append("\n Sync Frequency: "
-                + sharedPrefs.getString("prefSyncFrequency", "NULL"));
-
-        builder.append("\n Mod Number: "
-                + sharedPrefs.getInt("modified", 0));
-
-        builder.append("\n\n Printer Name: "
-                + sharedPrefs.getString("printerName", "NULL"));
-
-        builder.append("\n IP Address: 131.204.116."
-                + sharedPrefs.getString("ipEnd", "NULL"));
-
-        TextView settingsTextView = (TextView) findViewById(R.id.textUserSettings);
-
-        settingsTextView.setText(builder.toString());
-    }
-    */
-
     public void drawChart(int color, int height) {
         System.out.println("Color: "+ color+ " " + "Height: " + height);
         switch (color){
