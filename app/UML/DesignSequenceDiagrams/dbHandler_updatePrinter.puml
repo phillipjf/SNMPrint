@@ -1,0 +1,13 @@
+@startuml
+title dbHandler_updatePrinter
+-> dbHandler : updatePrinter(p : Printer)
+dbHandler -> SQLiteOpenHelper : db = this.getWritableDatabase()
+dbHandler -> ContentValues : new ContentValues()
+dbHandler -> ContentValues : values.put(KEY_NAME, p.mName)
+dbHandler -> ContentValues : values.put(KEY_IP, p.mIpAddr)
+dbHandler -> ContentValues : values.put(KEY_C, p.getcVal())
+dbHandler -> ContentValues : values.put(KEY_M, p.getmVal())
+dbHandler -> ContentValues : values.put(KEY_Y, p.getyVal())
+dbHandler -> ContentValues : values.put(KEY_K, p.getkVal())
+<- dbHandler : return db.update(TABLE_PRINTERS, values, KEY_ID + "=?", new String[]{String.valueOf(p.mPrinterID)})
+@enduml

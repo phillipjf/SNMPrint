@@ -1,0 +1,15 @@
+@startuml
+title dbHandler_addPrinter
+-> dbHandler : addPrinter(p : Printer)
+dbHandler -> SQLiteOpenHelper : this.getWritableDatabase()
+dbHandler -> ContentValues : values = new ContentValues()
+dbHandler -> ContentValues : values.put(KEY_NAME, p.mName)
+dbHandler -> ContentValues : values.put(KEY_IP, p.mIpAddr)
+dbHandler -> ContentValues : values.put(KEY_C, -1)
+dbHandler -> ContentValues : values.put(KEY_M, -1)
+dbHandler -> ContentValues : values.put(KEY_Y, -1)
+dbHandler -> ContentValues : values.put(KEY_K, -1)
+dbHandler -> dbHandler : insert(TABLE_PRINTERS, null, values)
+dbHandler -> dbHandler : db.close()
+<- dbHandler : return void
+@enduml

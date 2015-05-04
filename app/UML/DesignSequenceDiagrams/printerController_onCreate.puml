@@ -6,6 +6,7 @@ printerController -> ActionBar : actionBar.setDisplayHomeAsUpEnabled(true)
 printerController -> ActionBar : actionBar.setDisplayUseLogoEnabled(true)
 printerController -> printerController : updateList(list : ListView)
 printerController -> Button : setOnClickListener
+alt onClcik()
 Button -> EditText : pName = nameText.getText().toString()
 Button -> EditText : pIP = ipText.getText().toString()
 Button -> Printer : p = new Printer()
@@ -15,7 +16,11 @@ Button -> EditText : nameText.setText("")
 Button -> EditText : ipText.setText("")
 Button -> dbHandler : db.addPrinter(p)
 Button -> printerController : updateList(list)
+end
 printerController -> ListView : setItemOnClickListener((parent, view, position, id))
+alt onClick()
 ListView -> printerController : editItemAlert(position)
 ListView -> printerController : updateList(list)
+end
+<- printerController : return void
 @enduml

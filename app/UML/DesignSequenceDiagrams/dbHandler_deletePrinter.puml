@@ -1,0 +1,8 @@
+@startuml
+title dbHandler_deletePrinter
+-> dbHandler : deletePrinter(p : Printer)
+dbHandler -> SQLiteOpenHelper : db = this.getWriteableDatabase()
+dbHandler -> SQLiteDatabase : db.delete(TABLE_PRINTERS, KEY_ID + " = ?", new String[] {String.valueOf(p.mPrinterID)})
+dbHandler -> SQLiteDatabase : db.close()
+<- dbHandler : return void
+@enduml

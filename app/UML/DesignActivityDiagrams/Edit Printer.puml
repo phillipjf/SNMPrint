@@ -12,10 +12,10 @@ else
 --> "Update Database"
 else
 if "Edit by name" then
---> [Yes] "Input Printer name to edit"
+--> [Yes] "Select Printer name to edit"
 --> "Edit Printer info"
 else
--->[No] "Input Printer IP address to edit"
+-->[No] "Select Printer IP address to edit"
 --> "Edit Printer info"
 Endif
 --> "Submit update request"

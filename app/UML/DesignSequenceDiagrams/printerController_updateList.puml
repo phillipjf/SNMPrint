@@ -1,0 +1,6 @@
+@startuml
+->printerController : updateList(list : ListView)
+printerController -> LevelAdapter : adp = new LevelAdapter(this, R.layout.list_item,db.getAllPrinters())
+printerController -> ListView : list.setAdapter(adp)
+<- printerController : return void
+@enduml

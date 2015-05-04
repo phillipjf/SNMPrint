@@ -1,0 +1,16 @@
+@startuml
+title printerController_editItemAlert
+->printerController: editItemAlert(position : int)
+printerController -> dbHandler : pList = db.getAllPrinters()
+printerController -> ArrayList : p = pList.get(position)
+printerController -> EditText : printerName.setText(p.getPrinterName())
+printerController -> EditText : printerIp.setText(p.getIP())
+printerController -> TextView : printerID.setText(String.valueOf(p.getID()))
+printerController -> Button : btnDelete.setOnClickListener(arg0)
+alt onClick()
+Button -> dbHandler : db.deletePrinter(p)
+Button -> printerController : updateList(list)
+Button -> AlertDialog : dialog.dismiss()
+end
+<- printerController : return void
+@enduml
