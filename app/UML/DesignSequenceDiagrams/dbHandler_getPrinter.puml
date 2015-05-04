@@ -1,0 +1,14 @@
+@startuml
+title dbHandler_getPrinter
+-> dbHandler : getPrinter(id : int)
+dbHandler -> SQLiteOpenHelper : this.getReadableDatabse()
+dbHandler -> SQLiteDatabse : cursor = db.query(TABLE_PRINTERS, new String[], KEY_ID + "=?", new String[], null, null, null, null)
+opt cursor != null
+ dbHandler ->Cursor : cursor.moveToFirst()
+end
+dbHandler -> Printer : p = new Printer()
+dbHandler -> Printer : p.setId(cursor.getLong(0))
+dbHandler -> Printer : p.setPrinterName(cursor.getString(1))
+dbHandler -> Printer : setIP(cursor.getString(2))
+<- dbHandler : return p : Printer
+@enduml
