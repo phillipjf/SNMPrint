@@ -13,3 +13,8 @@ TO-DO:
 -Allow user to enter full IP addresses
 -Create better layouts on change orientation
 -Handle printers with non-standard CMYK ink
+
+
+Some values to try for IP Address:
+176, 179, 183, 185, 186, 188
+(Must be on Auburn's network)
