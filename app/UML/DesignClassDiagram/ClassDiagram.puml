@@ -20,7 +20,7 @@ MainActivity --|> ActionBarActivity
 MainActivity +-- printTask
 printTask --|> AsynchTask
 SplashScreen --|> Activity
-PrinterController ---|> Activity
+PrinterController ---|> ActionBarActivity
 snmpServer ---|> Activity
 dbHandler --|> SQLiteOpenHelper
 LevelAdapter --|> ArrayAdapter

@@ -1,4 +1,4 @@
-package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
+package edu.auburn.eng.csse.comp3710.Team1.snmprint;
 
 import android.app.ProgressDialog;
 import android.graphics.Color;
@@ -71,37 +71,6 @@ public class MainActivity extends ActionBarActivity{
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
     }
-
-    /*
-    private void showUserSettings() {
-        SharedPreferences sharedPrefs = PreferenceManager
-                .getDefaultSharedPreferences(this);
-
-        StringBuilder builder = new StringBuilder();
-
-        builder.append("\n Username: "
-                + sharedPrefs.getString("prefUsername", "NULL"));
-
-        builder.append("\n Send report:"
-                + sharedPrefs.getBoolean("prefSendReport", false));
-
-        builder.append("\n Sync Frequency: "
-                + sharedPrefs.getString("prefSyncFrequency", "NULL"));
-
-        builder.append("\n Mod Number: "
-                + sharedPrefs.getInt("modified", 0));
-
-        builder.append("\n\n Printer Name: "
-                + sharedPrefs.getString("printerName", "NULL"));
-
-        builder.append("\n IP Address: 131.204.116."
-                + sharedPrefs.getString("ipEnd", "NULL"));
-
-        TextView settingsTextView = (TextView) findViewById(R.id.textUserSettings);
-
-        settingsTextView.setText(builder.toString());
-    }
-    */
 
     public void drawChart(int color, int height) {
         System.out.println("Color: "+ color+ " " + "Height: " + height);
@@ -198,5 +167,4 @@ public class MainActivity extends ActionBarActivity{
             drawChart(4, 1);
         }
     }
-
 }

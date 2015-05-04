@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.auburn.eng.csse.comp3710.pjf0001.snmprint" >
+    package="edu.auburn.eng.csse.comp3710.Team1.snmprint" >
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-sdk
@@ -16,7 +16,7 @@
 
         <!-- Splash screen -->
         <activity
-            android:name="edu.auburn.eng.csse.comp3710.pjf0001.snmprint.SplashScreen"
+            android:name="edu.auburn.eng.csse.comp3710.Team1.snmprint.SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
@@ -29,17 +29,16 @@
         </activity>
 
         <activity
-            android:name="edu.auburn.eng.csse.comp3710.pjf0001.snmprint.MainActivity"
+            android:name="edu.auburn.eng.csse.comp3710.Team1.snmprint.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
 
         </activity>
 
-        <activity android:name=".UserSettingActivity"/>
-        <activity android:name=".printerController">
+        <activity android:name="edu.auburn.eng.csse.comp3710.Team1.snmprint.printerController">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.auburn.eng.csse.comp3710.pjf0001.snmprint.MainActivity" />
+                android:value="edu.auburn.eng.csse.comp3710.Team1.snmprint.MainActivity" />
         </activity>
     </application>
 

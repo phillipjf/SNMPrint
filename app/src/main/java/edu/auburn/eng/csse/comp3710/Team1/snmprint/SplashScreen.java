@@ -1,4 +1,4 @@
-package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
+package edu.auburn.eng.csse.comp3710.Team1.snmprint;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.os.Handler;
 public class SplashScreen extends Activity {
 
     // Splash screen timer
-    private static int SPLASH_TIME_OUT = 300;
+    private static int SPLASH_TIME_OUT = 2500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "edu.auburn.eng.csse.comp3710.pjf0001.snmprint"
+        applicationId "edu.auburn.eng.csse.comp3710.Team1.snmprint"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
@@ -22,5 +22,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
-    compile files('src/main/java/edu/auburn/eng/csse/comp3710/pjf0001/snmprint/snmp.jar')
+    compile files('src/main/java/edu/auburn/eng/csse/comp3710/Team1/snmprint/snmp.jar')
 }

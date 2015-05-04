@@ -1,11 +1,10 @@
-package edu.auburn.eng.csse.comp3710.pjf0001.snmprint;
+package edu.auburn.eng.csse.comp3710.Team1.snmprint;
 /*
  * http://hosteddocs.ittoolbox.com/KA110807.pdf
  * http://www.oidview.com/mibs/0/Printer-MIB.html
  */
 
 import android.app.Activity;
-import android.widget.TextView;
 import java.net.InetAddress;
 import snmp.*;
 
