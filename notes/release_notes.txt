@@ -1,0 +1,20 @@
+RELEASE NOTES:
+
+SNMPrint uses SNMP to check status of network printers. The user is able to enter an IP address for a printer and the app will query the printer for it’s ink levels and return to the user a graphic representation of the levels. 
+
+-The app maintains a SQL database of the printers entered by the user
+	-The database supports all CRUD functions
+-The app runs network queries in an Asynchronous Task to avoid becoming unresponsive
+
+-For now, the app is central to Auburn’s network (Only allows IP addresses 131.204.116.XXX)
+
+
+TO-DO:
+-Allow user to enter full IP addresses
+-Create better layouts on change orientation
+-Handle printers with non-standard CMYK ink
+
+
+Some values to try for IP Address:
+176, 179, 183, 185, 186, 188
+(Must be on Auburn's network)

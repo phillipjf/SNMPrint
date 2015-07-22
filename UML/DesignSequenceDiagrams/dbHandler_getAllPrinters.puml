@@ -1,0 +1,21 @@
+@startuml
+title dbHandler_getAllPrinters
+->dbHandler : getAllPrinters()
+dbHandler -> ArrayList : new ArrayList<Printer>()
+dbHandler -> SQLiteOpenHelper : this.getWritableDatabase()
+dbHandler -> SQLiteDatabase : db.rawQuery(selectQuery, null)
+opt cursor.moveToFirst()
+ loop cursor.moveToNext()
+ dbHandler -> Printer : new Printer()
+ dbHandler -> Printer : p.setID(cursor.getLong(0))
+ dbHandler -> Printer : p.setPrinterName(cursor.getString(1))
+ dbHandler -> Printer : p.setIP(cursor.getString(2))
+ dbHandler -> Printer : p.setcVal(cursor.getInt(3))
+ dbHandler -> Printer : p.setmVal(cursor.getInt(4))
+ dbHandler -> Printer : p.setyVal(cursor.getInt(5))
+ dbHandler -> Printer : p.setkVal(cursor.getInt(6))
+ dbHandler -> ArrayList : printerList.add(p)
+ end
+end
+<- dbHandler : printerList : ArrayList<Printer>
+@enduml
